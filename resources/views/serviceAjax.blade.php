@@ -26,7 +26,7 @@
                 <th>ID Arsitek</th>
                 <th>ID Layanan</th>
                 <th>Details</th>
-                <th width="280px">Action</th>
+                <th width="130px">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -65,15 +65,13 @@
                             <input type="text" class="form-control" id="id_projekmanager" name="id_projekmanager" placeholder="Input ID Projek Manager" value="" maxlength="5" required="">
                     </div>
 
-
-                    <div class="form-group">
+                 </div>
+                 <div class="form-group">
                         <label>Details</label>
                         <div class="col-sm-12">
                             <textarea id="detail" name="detail" required="" placeholder="Input Details" class="form-control"></textarea>
                         </div>
                     </div>
-
-                 </div>
                     <div class="col-sm-offset-2 col-sm-10">
                      <button type="submit" class="btn btn-primary" id="saveBtn" value="create">Save changes
                      </button>

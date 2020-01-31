@@ -24,7 +24,7 @@
                 <th>ID User</th>
                 <th>ID Service</th>
                 <th>Pesanan</th>
-                <th width="280px">Action</th>
+                <th width="130px">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -46,14 +46,14 @@
                     <div class="form-group">
                         <label for="id_user" class="col-sm-2 control-label">USER</label>
                         <div class="col-sm-12">
-                            <input type="text" class="form-control" id="id_user" name="id_user" placeholder="Enter ID USER" value="" maxlength="50" required="">
+                            <input type="text" class="form-control" id="id_user" name="id_user" placeholder="Enter ID USER" value="" maxlength="5" required="">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="id_service" class="col-sm-2 control-label">ID Service</label>
                         <div class="col-sm-12">
-                            <input type="text"  class="form-control" id="id_service" name="id_service" placeholder="Enter id_service" value="" maxlength="50" required="">
+                            <input type="text"  class="form-control" id="id_service" name="id_service" placeholder="Enter id_service" value="" maxlength="5" required="">
                         </div>
                     </div>   
 
@@ -65,12 +65,6 @@
                     </div>
 
                 
-                    
-                    
-                   
-      
-
-
                     <div class="col-sm-offset-2 col-sm-10">
                      <button type="submit" class="btn btn-primary" id="saveBtn" value="create">Save changes
                      </button>
