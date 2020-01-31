@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ArchiTech.com</title>
+    <title>Architech.com</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
     <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
@@ -14,19 +14,18 @@
 </head>
 <body>
     
-    <h1>Form Data Service</h1>
-    
-    <a class="btn btn-success" href="javascript:void(0)" id="createNewService"> Create New Service</a>
+<div class="container">
+    <h1>Form Layanan</h1>
+    <a class="btn btn-success" href="javascript:void(0)" id="createNewService"> Create New Layanan</a>
     <table class="table table-bordered data-table">
         <thead>
             <tr>
-                <th>NO</th>
-                <th>ID</th>
-                <th>Nama</th>
-                <th>Detail</th>
+                <th>No</th>
+                <th>Nama Layanan</th>
                 <th>Biaya</th>
                 <th>ID Arsitek</th>
-                <th>ID Project Manager</th>
+                <th>ID Layanan</th>
+                <th>Details</th>
                 <th width="280px">Action</th>
             </tr>
         </thead>
@@ -44,40 +43,37 @@
             <div class="modal-body">
                 <form id="serviceForm" name="serviceForm" class="form-horizontal">
                    <input type="hidden" name="service_id" id="service_id">
-                   <form id="serviceForm" name="serviceForm" class="form-horizontal">
-                   <input type="hidden" name="id" id="id">
-                   <div class="form-row">
-                        
-                        <div class="form-group col-md-6">
-                           <b> <label>Nama Layanan</label></b>
-                           <input type="text" class="form-control" id="nama" name="nama" placeholder="Enter Nama Layanan"  required="">
-                         </div>
-                       
-                      
-                         <div class="form-group col-md-6">
-                           <b> <label>Detail</label></b>
-                           <input type="text" class="form-control" id="detail" name="detail" placeholder="EnterDetail"  required="">
-                         </div>
-    
-                        <div class="form-group col-md-6">
-                           <b> <label for="biaya">Biaya</label></b>
-                                    <input type="number" class="form-control" id="biaya" name="biaya" placeholder="Enter Biaya" value="" required="">
-                           
+                <div class="form-row">
+                 
+                    <div class="form-group col-md-6">
+                        <label for="nama">Nama Layanan</label>
+                            <input type="text" class="form-control" id="nama" name="nama" placeholder="Input Nama Layanan" value="" maxlength="50" required="">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="biaya" class="col-sm-2 control-label">Biaya</label>
+                            <input type="number" class="form-control" id="biaya" name="biaya" placeholder="Input Biaya" value="" maxlength="11" required="">
+                    </div>
+                    
+                    <div class="form-group col-md-6">
+                        <label for="id_arsitek">ID Arsitek</label>
+                            <input type="text" class="form-control" id="id_arsitek" name="id_arsitek" placeholder="Input ID Arsitek" value="" maxlength="5" required="">
+                    </div>
+     
+                    <div class="form-group col-md-6">
+                        <label for="id_projekmanager">ID Projek Manager</label>
+                            <input type="text" class="form-control" id="id_projekmanager" name="id_projekmanager" placeholder="Input ID Projek Manager" value="" maxlength="5" required="">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Details</label>
+                        <div class="col-sm-12">
+                            <textarea id="detail" name="detail" required="" placeholder="Input Details" class="form-control"></textarea>
                         </div>
-                        <div class="form-group col-md-6">
-                           <b> <label for="id_arsitek">ID Arsitek</label></b>
-                                    <input type="text" class="form-control" id="id_arsitek" name="id_arsitek" placeholder="Enter ID Arsitek" value=""  required="">
-                            
-                        </div>
-                       
-                        <div class="form-group col-md-6">
-                           <b> <label for="id_projekmanager">ID Projek Manager</label></b>
-                                     <input type="text" class="form-control" id="id_projekmanager" name="id_projekmanager" placeholder="ID Projek Manager" value=""  required="">
-                        </div>
-    
-           
-                        </div>
-      
+                    </div>
+
+                 </div>
                     <div class="col-sm-offset-2 col-sm-10">
                      <button type="submit" class="btn btn-primary" id="saveBtn" value="create">Save changes
                      </button>
@@ -104,38 +100,36 @@
         serverSide: true,
         ajax: "{{ route('services.index') }}",
         columns: [
-                    {data: 'DT_RowIndex', name: 'DT_RowIndex'},
-                    {data: 'id', name: 'id'},
-                    { data: 'nama', name: 'nama' },
-                    { data: 'detail', name: 'detail' },
-                    { data: 'biaya', name: 'biaya' },
-                    { data: 'id_arsitek', name: 'id_arsitek' },
-                    { data: 'id_projekmanager', name: 'id_projekmanager' },
-                     {data: 'action', name: 'action', orderable: false, searchable: false},
+            {data: 'DT_RowIndex', name: 'DT_RowIndex'},
+            {data: 'nama', name: 'nama'},
+            {data: 'biaya', name: 'biaya'},
+            {data: 'id_arsitek', name: 'id_arsitek'},
+            {data: 'id_projekmanager', name: 'id_projekmanager'},
+            {data: 'detail', name: 'detail'},
+            {data: 'action', name: 'action', orderable: false, searchable: false},
         ]
     });
      
     $('#createNewService').click(function () {
-        $('#saveBtn').val("create-Service");
-        $('#id').val('');
+        $('#saveBtn').val("create-service");
         $('#service_id').val('');
         $('#serviceForm').trigger("reset");
-        $('#modelHeading').html("Create New Service");
+        $('#modelHeading').html("Create New Layanan");
         $('#ajaxModel').modal('show');
     });
     
     $('body').on('click', '.editService', function () {
       var service_id = $(this).data('id');
       $.get("{{ route('services.index') }}" +'/' + service_id +'/edit', function (data) {
-            $('#modelHeading').html("Edit Service");
-            $('#saveBtn').val("edit-user");
-            $('#ajaxModel').modal('show');
-            $('#service_id').val(data.id_service);
-            $('#nama').val(data.nama);
-            $('#detail').val(data.detail);
-            $('#biaya').val(data.biaya);
-            $('#id_arsitek').val(data.id_arsitek);
-            $('#id_projekmanager').val(data.id_projekmanager);
+          $('#modelHeading').html("Edit Layanan");
+          $('#saveBtn').val("edit-user");
+          $('#ajaxModel').modal('show');
+          $('#service_id').val(data.id);
+          $('#nama').val(data.nama);
+          $('#biaya').val(data.biaya);
+          $('#id_arsitek').val(data.id_arsitek);
+          $('#id_projekmanager').val(data.id_projekmanager);
+          $('#detail').val(data.detail);
       })
    });
     
@@ -163,8 +157,10 @@
     });
     
     $('body').on('click', '.deleteService', function () {
-        if(confirm("Are You sure want to delete !")){
+     
         var service_id = $(this).data("id");
+       if( confirm("Are You sure want to delete !")){
+      
         $.ajax({
             type: "DELETE",
             url: "{{ route('services.store') }}"+'/'+service_id,
@@ -173,9 +169,9 @@
             },
             error: function (data) {
                 console.log('Error:', data);
-            }   
+            }
         });
-        }
+    }
     });
      
   });
