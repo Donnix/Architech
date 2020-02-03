@@ -31,22 +31,23 @@ body{
                <form action="{{url('post-registration')}}" method="POST" id="regForm">
                  {{ csrf_field() }}
                 <div class="form-label-group">
-                  <input type="text" id="inputName" name="name" class="form-control" placeholder="Full name" autofocus>
-                  <label for="inputName">Name</label>
- 
-                  @if ($errors->has('name'))
-                  <span class="error">{{ $errors->first('name') }}</span>
+                <label for="inputName">Name</label>
+                  <input type="text" id="inputName" name="nama" class="form-control" placeholder="Full name" autofocus>
+                  @if ($errors->has('nama'))
+                  <span class="error">{{ $errors->first('nama') }}</span>
                   @endif       
  
-                </div> 
-                <div class="form-label-group">
-                  <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" >
-                  <label for="inputEmail">Email address</label>
+                </div>
+
+                 <div class="form-label-group">
+                 <label for="inputAlamat">Alamat</label>
+                  <input type="text" id="inputAlamat" name="alamat" class="form-control" placeholder="Alamat" autofocus>
  
-                  @if ($errors->has('email'))
-                  <span class="error">{{ $errors->first('email') }}</span>
-                  @endif    
-                </div> 
+                  @if ($errors->has('alamat'))
+                  <span class="error">{{ $errors->first('alamat') }}</span>
+                  @endif       
+ 
+                </div>
 
                 
                 <div class="form-label-group">
@@ -59,7 +60,20 @@ body{
                   @if ($errors->has('email'))
                   <span class="error">{{ $errors->first('email') }}</span>
                   @endif    
+                </div>        
+ 
+                </div>
+
+                <div class="form-label-group">
+                  <input type="number" name="no_hp" id="inputEmail" class="form-control" placeholder="NO Hp" >
+                  <label for="inputEmail">NO Hp</label>
+ 
+                  @if ($errors->has('no_hp'))
+                  <span class="error">{{ $errors->first('no_hp') }}</span>
+                  @endif    
                 </div> 
+
+                
  
  
                 <div class="form-label-group">
