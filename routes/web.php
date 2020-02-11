@@ -19,6 +19,9 @@ Route::resource('services', 'ServiceController');
 Route::resource('orders','OrderController');
 Route::resource('levels','LevelController');
 
+Route::get('/contact', 'ContactController@index')->name('contact');
+Route::get('/about', 'AboutController@index')->name('about');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

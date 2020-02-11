@@ -4,88 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Bootstrap 4 Responsive Layout Example</title>
+    <title>ARCHITECH</title>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    
-    
-    <style>
-    body{
-        background: linear-gradient(to bottom, #ffffff 0%,  #fff8dc 100%);
-        font-family: Bahnschrift, Helvetica, sans-serif;
-    }
-    .header{
-        background-color: #333333;
-    }
-    span{
-         color:white;
-         word-spacing:1px;
-    }
-    .navbar{
-        padding: 20px;
-    }
-    .navbar-brand{
-        text-transform:uppercase;
-        letter-spacing:5px;
-    }
-    .dropdown-menu li a {
-        color: #000;
-    }
-    .dropdown-menu li a:hover {
-        background-color: #555;
-    }
-    .carousel-inner img {
-        width: 100%; /* Set width to 100% */
-        height: 100%;
-        margin: auto;
-    }
-    .carousel-caption{
-        font-weight: 100;
-        color: white;
-        text-shadow: 0 1px 2px #000;
-        position: absolute;
-        bottom: 50px;
-        right: 80px;
-        text-align: right;
-        min-height: 250px; /* Prevent carousel from being distorted if for some reason image doesn't load */
-    }
-    .carousel-caption p{
-       font-size: 24px; 
-       min-height: 250px; /* Prevent carousel from being distorted if for some reason image doesn't load */
-    }
-    .featured-text{
-        margin:20px;
-    }
-    .project-text{
-        margin: 50px;
-    }
-    .project-text hr{
-        margin: 50px;
-    }
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>    
 
-    .contactus-btn{
-        padding: 75px;
-    }
+    <link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/stylct.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/stylbt.css')}}">
+    <script src="{{asset('js/stylejs.js')}}"></script>
 
-    footer{
-        background-color: #333333;
-        color:white;
-    }
-    .row a{
-        color: white;
-        text-decoration: none;
-        font-size: 14px;
-    }
-    a:active{
-        color: #ffc107;
-    }
-
-    </style>
 </head>
 <body>
 <div class="header">
@@ -97,7 +33,7 @@
                         <span><i class="fa fa-phone"></i> +6257 7959 3473</span>
                     </div>
                     <div class="col-md pr-5 d-flex topper align-items-center">   
-                        <span><i class="fa fa-envelope"></i> handmade@gmail.com</span>
+                        <span><i class="fa fa-envelope"></i> architech@gmail.com</span>
                     </div>
                     <div class="col-md pr-1 d-flex topper align-items-center">   
                         <span><i class="fa fa-building"></i> Bandung - Bogor - Yogyakarta</span>
@@ -107,11 +43,10 @@
         </div>
     </div>
 </div>    
-    
-    
+        
 <nav class="navbar navbar-expand-md navbar-light bg-warning sticky-top shadow-lg">
     <div class="container">
-        <a href="/" class="navbar-brand mr-3"><img src="img/lgg.png"></a>
+        <a href="#" class="navbar-brand mr-3"><img src="img/lgg.png"></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -135,12 +70,12 @@
                         <a href="#" class="dropdown-item">Arsitek</a>
                     </div>
                 </div>
-                    <a href="kontak.html" class="nav-item nav-link">Kontak</a>
-                    <a href="tentang.html" class="nav-item nav-link">Tentang</a>
+                    <a href="contact" class="nav-item nav-link">Kontak</a>
+                    <a href="/about" class="nav-item nav-link">Tentang</a>
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a href="{{ route('login') }}" class="nav-item nav-link">Login</a>
-                    <a href="{{ route('register') }}" class="nav-item nav-link">Register</a>
+                    <a href="login" class="nav-item nav-link"><i class="fa fa-user"></i> Login</a>
+                    <a href="register" class="nav-item nav-link"><i class="fa fa-user-o"></i> Register</a>
             </div>
         </div>
     </div>    
@@ -149,7 +84,8 @@
 <div class="contentt">    
       @yield('content')
 </div>
-    <!-- Footer -->
+   
+<!-- Footer -->
 <footer class="page-footer font-small pt-4">
 
   <!-- Footer Links -->
@@ -195,7 +131,7 @@
       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
         <h6 class="text-uppercase mb-4 font-weight-bold" style="color:#ffc107;">Navigasi</h6>
         <p>
-          <a href="#!">Beranda</a>
+          <a href="/">Beranda</a>
         </p>
         <p>
           <a href="#!">Layanan</a>
@@ -204,10 +140,10 @@
           <a href="#!">Jasa</a>
         </p>
         <p>
-          <a href="#!">Kontak</a>
+          <a href="contact">Kontak</a>
         </p>
         <p>
-          <a href="#!">Tentang</a>
+          <a href="/about">Tentang</a>
         </p>
       </div>
 
@@ -216,15 +152,15 @@
 
       <!-- Grid column -->
       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold" style="color:#ffc107;">Kontak</h6>
+        <h6 class="text-uppercase mb-4 font-weight-bold" style="color:#ffc107;">Alamat</h6>
         <p>
-          <i class="fa fa-map-marker mr-3"></i> New York, NY 10012, US</p>
+          <i class="fa fa-map-marker mr-3"></i> Jl. Raya Wangun No.21, Sindangsari, Kec. Bogor Tim., Kota Bogor, Jawa Barat 16146</p>
         <p>
-          <i class="fa fa-envelope mr-3"></i> info@gmail.com</p>
+          <i class="fa fa-envelope mr-3"></i> architech@gmail.com</p>
         <p>
-          <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+          <i class="fa fa-phone mr-3"></i> + 62 892 4370 6807</p>
         <p>
-          <i class="fa fa-clock-o mr-3"></i>Sat - Fry: 9:00 am- 2:00pm</p>
+          <i class="fa fa-clock-o mr-3"></i> Sen - Jum: 9:00 am- 4:00pm</p>
       </div>
       <!-- Grid column -->
 
@@ -285,5 +221,38 @@
 
 </footer>
 <!-- Footer -->
+<script type="text/javascript">
+window.addEventListener('scroll', function() {
+ navbarScroll();
+});
+function navbarScroll() {
+  var y = window.scrollY;
+  if (y > 10) {
+    var navbar = document.getElementsByClassName('navbar')[0];
+      navbar.classList.add('small');
+
+  } else if (y < 10) {
+      var navbar = document.getElementsByClassName('navbar')[0];
+     navbar.classList.remove('small');
+  }
+}
+
+
+$(document).ready(function() {
+
+$('.counter').each(function () {
+$(this).prop('Counter',0).animate({
+Counter: $(this).text()
+}, {
+duration: 10000,
+easing: 'swing',
+step: function (now) {
+$(this).text(Math.ceil(now));
+}
+});
+});
+
+});
+</script>
 </body>
 </html>                             
