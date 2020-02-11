@@ -14,13 +14,29 @@
 <div class="container">
 <div class="row">
   <div class="col-md-8">
-      <form action="/post" method="post">
-        <input class="form-control" name="name" placeholder="Nama" /><br/>
-        <input class="form-control" name="phone" placeholder="Telepon" /><br/>
+
+
+  @if ($errors->any())
+    <div class="alert alert-danger">
+        <strong>Whoops!</strong> There were some problems with your input.<br><br>
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
+<form action="{{url('/contact') }}" method="POST">
+    @csrf
+        <input class="form-control" name="nama"  placeholder="Nama" /><br/>
+        <input type="number" class="form-control"  name="telepon" placeholder="Telepon" /><br/>
         <input class="form-control" name="email" placeholder="E-mail" /><br/>
-        <textarea class="form-control" name="text" placeholder="" style="height:150px;"></textarea><br/>
-        <input class="btn btn-warning" type="submit" value="Kirim" /><br/><br/>
+        <textarea class="form-control" name="saran" placeholder="Saran" style="height:150px;"></textarea><br/>
+        <button class="btn btn-warning" type="submit">Submit</button>
+        <br/><br/>
       </form>
+      
   </div>
   <div class="col-md-4">
     <b>INFO KONTAK:</b> <br/>

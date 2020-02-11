@@ -20,6 +20,9 @@ Route::resource('orders','OrderController');
 Route::resource('levels','LevelController');
 
 Route::get('/contact', 'ContactController@index')->name('contact');
+Route::post('/contact','ContactController@store')->name('contact');
+   
+
 Route::get('/about', 'AboutController@index')->name('about');
 
 Auth::routes();
