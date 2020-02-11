@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.1
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 31 Jan 2020 pada 10.11
--- Versi server: 10.4.8-MariaDB
--- Versi PHP: 7.3.11
+-- Waktu pembuatan: 11 Feb 2020 pada 05.10
+-- Versi server: 10.3.16-MariaDB
+-- Versi PHP: 7.3.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -107,8 +107,7 @@ INSERT INTO `orders` (`id`, `id_user`, `id_service`, `pesan`, `created_at`, `upd
 (2, '2', '3`', 'hahaha', '2020-01-30 02:24:19', '2020-01-30 02:24:19'),
 (3, '2', '1', '2', '2020-01-30 02:29:24', '2020-01-30 02:29:24'),
 (4, '2', '2', '2', '2020-01-30 02:31:27', '2020-01-30 02:31:27'),
-(13, '4', '4', '4', '2020-01-31 01:02:51', '2020-01-31 01:02:51'),
-(14, '+', '1222a', ']]\\\\', '2020-01-31 02:08:16', '2020-01-31 02:08:16');
+(13, '4', '4', '4', '2020-01-31 01:02:51', '2020-01-31 01:02:51');
 
 -- --------------------------------------------------------
 
@@ -153,8 +152,8 @@ INSERT INTO `services` (`id`, `nama`, `biaya`, `id_arsitek`, `id_projekmanager`,
 --
 
 CREATE TABLE `users` (
-  `id_user` bigint(20) UNSIGNED NOT NULL,
-  `nama` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `alamat` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `id_level` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `no_hp` varchar(13) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -166,6 +165,13 @@ CREATE TABLE `users` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data untuk tabel `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `alamat`, `id_level`, `no_hp`, `jumlah_perkerja`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'q', 'q', '1', '089643706807', 1, 'admin@admin', NULL, '$2y$10$tTsMtkmrEw4Z65cqcyHLTuA9ODlZx7n2pCiu4dIpGXiemH5jLN8JO', NULL, '2020-02-02 21:40:22', '2020-02-02 21:40:22');
 
 --
 -- Indexes for dumped tables
@@ -211,7 +217,7 @@ ALTER TABLE `services`
 -- Indeks untuk tabel `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id_user`),
+  ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `users_email_unique` (`email`);
 
 --
@@ -252,7 +258,7 @@ ALTER TABLE `services`
 -- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_user` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
