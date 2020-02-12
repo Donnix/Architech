@@ -1,5 +1,5 @@
 .page-footer{
-      background: url("public/img/7.jpg") no-repeat fixed;
+      background: url("../img/7.jpg") no-repeat fixed;
       background-position: center;
       position: relative;
       z-index: 1;
@@ -17,7 +17,7 @@
     }
 
     .banner_area {
-      background: url("public/img/4.jpg") no-repeat fixed;
+      background: url("../img/4.jpg") no-repeat fixed;
       background-position: center;
       text-align: center;
       position: relative;

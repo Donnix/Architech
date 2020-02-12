@@ -14,7 +14,7 @@
 
 </head>
 <body>
-<div class="sidenav shadow-lg wow slideInRight" data-wow-duration="2s ease-in">
+<div class="sidenav">
          <div class="login-main-text">
             <h2>Application<br> Login Page <a href="/">Home</a></h2> 
             <p><a href="login">Login</a> or <a href="register">Register</a> from here to access.</p>

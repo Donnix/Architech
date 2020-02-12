@@ -9,17 +9,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
     <link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/stylct.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/stylbt.css')}}">
     <script src="{{asset('js/stylejs.js')}}"></script>
 
 </head>
@@ -43,8 +47,8 @@
         </div>
     </div>
 </div>    
-        
-<nav class="navbar navbar-expand-md navbar-light bg-warning sticky-top shadow-lg">
+
+<nav class="nvg navbar navbar-expand-md navbar-light bg-warning sticky-top shadow-lg">
     <div class="container">
         <a href="#" class="navbar-brand mr-3"><img src="img/lgg.png"></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -74,8 +78,22 @@
                     <a href="/about" class="nav-item nav-link">Tentang</a>
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a href="login" class="nav-item nav-link"><i class="fa fa-user"></i> Login</a>
-                    <a href="register" class="nav-item nav-link"><i class="fa fa-user-o"></i> Register</a>
+                  @guest
+                    <a class="nav-item nav-link" href="{{ route('login') }}"><i class="fa fa-user"></i> {{ __('Login') }}</a>
+                    @if (Route::has('register'))
+                    <a class="nav-item nav-link" href="{{ route('register') }}"><i class="fa fa-user-o"></i> {{ __('Register') }}</a>
+                    @endif
+                      @else
+                        <li class="nav-item dropdown">
+                          <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre> {{ Auth::user()->name }} <span class="caret"></span></a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="fa fa-sign-out"></i> {{ __('Logout') }} </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                  @csrf
+                              </form>
+                            </div>
+                          </li>
+                  @endguest
             </div>
         </div>
     </div>    
@@ -153,12 +171,12 @@
       <!-- Grid column -->
       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
         <h6 class="text-uppercase mb-4 font-weight-bold" style="color:#ffc107;">Alamat</h6>
-        <p>
+        <p style="text-align: justify;" >
           <i class="fa fa-map-marker mr-3"></i> Jl. Raya Wangun No.21, Sindangsari, Kec. Bogor Tim., Kota Bogor, Jawa Barat 16146</p>
         <p>
           <i class="fa fa-envelope mr-3"></i> architech@gmail.com</p>
         <p>
-          <i class="fa fa-phone mr-3"></i> + 62 892 4370 6807</p>
+          <i class="fa fa-phone mr-3"></i> +6257 2479 4834</p>
         <p>
           <i class="fa fa-clock-o mr-3"></i> Sen - Jum: 9:00 am- 4:00pm</p>
       </div>
@@ -227,15 +245,49 @@ window.addEventListener('scroll', function() {
 });
 function navbarScroll() {
   var y = window.scrollY;
-  if (y > 10) {
-    var navbar = document.getElementsByClassName('navbar')[0];
-      navbar.classList.add('small');
+  if (y > 100) {
+    var nvg = document.getElementsByClassName('navbar')[0];
+      nvg.classList.add('small');
 
-  } else if (y < 10) {
-      var navbar = document.getElementsByClassName('navbar')[0];
-     navbar.classList.remove('small');
+  } else if (y < 100) {
+      var nvg = document.getElementsByClassName('navbar')[0];
+     nvg.classList.remove('small');
   }
 }
+
+
+$(document).ready(function () {
+$('.navbar-collapse .dropdown').hover(function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+    }, function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
+    });
+});
+
+
+$('.portfolio-item').isotope({
+itemSelector: '.item',
+layoutMode: 'fitRows'
+});
+$('.portfolio-menu ul li').click(function(){
+$('.portfolio-menu ul li').removeClass('active');
+$(this).addClass('active');
+          
+var selector = $(this).attr('data-filter');
+$('.portfolio-item').isotope({
+  filter:selector
+});
+return  false;
+});
+$(document).ready(function() {
+var popup_btn = $('.popup-btn');
+    popup_btn.magnificPopup({
+    type : 'image',
+    gallery : {
+    enabled : true
+    }
+});
+});
 
 
 $(document).ready(function() {
@@ -252,6 +304,30 @@ $(this).text(Math.ceil(now));
 });
 });
 
+});
+
+
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
 });
 </script>
 </body>

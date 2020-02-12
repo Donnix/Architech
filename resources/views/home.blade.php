@@ -64,7 +64,7 @@
               <div class="project-text w-100 my-auto text-center text-lg-left">
                 <h4 class="text-white">Misty</h4>
                 <p class="mb-0 text-white-50" style="text-align: justify;">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                <hr class="d-none d-lg-block mb-0 ml-0">
+                <hr class="d-none d-lg-block mb-0 ml-0`">
               </div>
             </div>
           </div>
@@ -172,25 +172,97 @@
         </div>
     </section><br>
 
-<div class="sectiontitle">
-    <h2>Projects statistics</h2>
-    <span class="headerLine"></span>
+<div class="container">
+         <div class="row">
+               <div class="col-xl-6 mx-auto text-center">
+                  <div class="section-title mb-100">
+                     <p>what i can do</p>
+                     <h4>my project</h4>
+                  </div>
+               </div>
+            </div>
+         <div class="portfolio-menu mt-2 mb-4">
+            <ul>
+               <li class="btn btn-outline-dark active" data-filter="*">All</li>
+               <li class="btn btn-outline-dark" data-filter=".gts">Girls T-shirt</li>
+               <li class="btn btn-outline-dark" data-filter=".lap">Laptops</li>
+               <li class="btn btn-outline-dark text" data-filter=".selfie">selfie</li>
+            </ul>
+         </div>
+         <div class="portfolio-item row">
+            <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+               <img class="img-fluid" src="img/ars.jpg" alt="">
+            </div>
+            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+               <img class="img-fluid" src="img/assd.jfif" alt="">
+            </div>
+            <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+               <img class="img-fluid" src="img/ar.jfif"alt=" ">
+            </div>
+            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+               <img class="img-fluid" src="img/16.jpg" alt="">
+            </div>
+            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+               <img class="img-fluid" src="img/13.jpg" alt="">
+            </div>
+            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+               <img class="img-fluid" src="img/dddd.jpg" alt="">
+            </div>
+            <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+               <img class="img-fluid" src="img/dw.jpg" alt="">
+            </div>
+         </div>
+      </div><br><br><br><br><br>
+
+<div class="section-title">
+    <div class="row">
+        <div class="col-xl-6 mx-auto text-center">
+            <div class="section-title mb-10">
+                <p>what i can do</p>
+                <h4>happy client</h4>
+            </div>
+        </div>
+    </div>
 </div>
 <section class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
     <div class="container">
         <div class="row">
             <!-- counter -->
-            <div class="col-md-3 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms" style="visibility: visible; animation-duration: 300ms; animation-name: fadeInUp;"> <i class="fa fa-beer medium-icon"></i> <span id="anim-number-pizza" class="counter-number"></span> <span class="timer counter alt-font appear" data-to="980" data-speed="7000">2800</span>
+            <div class="col-md-3 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms" style="visibility: visible; animation-duration: 300ms; animation-name: fadeInUp;"> <i class="fa fa-beer medium-icon"></i> <span id="anim-number-pizza" class="counter-number"></span> <span class="timer counter alt-font appear" data-to="980" data-speed="10000">2800</span>
                 <p class="counter-title">Beer Ordered</p>
             </div> <!-- end counter -->
             <!-- counter -->
-            <div class="col-md-3 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="600ms" style="visibility: visible; animation-duration: 600ms; animation-name: fadeInUp;"> <i class="fa fa-heart medium-icon"></i> <span class="timer counter alt-font appear" data-to="980" data-speed="7000">980</span> <span class="counter-title">Happy Clients</span> </div> <!-- end counter -->
+            <div class="col-md-3 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="600ms" style="visibility: visible; animation-duration: 600ms; animation-name: fadeInUp;"> <i class="fa fa-heart medium-icon"></i> <span class="timer counter alt-font appear" data-to="980" data-speed="10000">980</span> <span class="counter-title">Happy Clients</span> </div> <!-- end counter -->
             <!-- counter -->
-            <div class="col-md-3 col-sm-6 bottom-margin-small text-center counter-section wow fadeInUp xs-margin-bottom-ten animated" data-wow-duration="900ms" style="visibility: visible; animation-duration: 900ms; animation-name: fadeInUp;"> <i class="fa fa-anchor medium-icon"></i> <span class="timer counter alt-font appear" data-to="810" data-speed="7000">810</span> <span class="counter-title">Projects Completed</span> </div> <!-- end counter -->
+            <div class="col-md-3 col-sm-6 bottom-margin-small text-center counter-section wow fadeInUp xs-margin-bottom-ten animated" data-wow-duration="900ms" style="visibility: visible; animation-duration: 900ms; animation-name: fadeInUp;"> <i class="fa fa-anchor medium-icon"></i> <span class="timer counter alt-font appear" data-to="810" data-speed="10000">810</span> <span class="counter-title">Projects Completed</span> </div> <!-- end counter -->
             <!-- counter -->
-            <div class="col-md-3 col-sm-6 text-center counter-section wow fadeInUp animated" data-wow-duration="1200ms" style="visibility: visible; animation-duration: 1200ms; animation-name: fadeInUp;"> <i class="fa fa-user medium-icon"></i> <span class="timer counter alt-font appear" data-to="600" data-speed="7000">600</span> <span class="counter-title">Clients Served</span> </div> <!-- end counter -->
+            <div class="col-md-3 col-sm-6 text-center counter-section wow fadeInUp animated" data-wow-duration="1200ms" style="visibility: visible; animation-duration: 1200ms; animation-name: fadeInUp;"> <i class="fa fa-user medium-icon"></i> <span class="timer counter alt-font appear" data-to="600" data-speed="10000">600</span> <span class="counter-title">Clients Served</span> </div> <!-- end counter -->
         </div>
     </div>
-</section><br>
+</section><br><br><br>
+
+<div class="container">
+  <div class="section-title">
+    <div class="row">
+        <div class="col-xl-6 mx-auto text-center">
+            <div class="section-title mb-10">
+                <p>what i can do</p>
+                <h4>team other</h4>
+            </div>
+        </div>
+    </div>
+</div>
+   <section class="customer-logos slider">
+      <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+      <div class="slide"><img src="http://www.webcoderskull.com/img/logo.png"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+   </section>
+</div><br>
 
 @endsection
