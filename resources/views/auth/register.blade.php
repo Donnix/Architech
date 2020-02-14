@@ -25,12 +25,13 @@
                     @enderror
                 </div>
             
-            <div class="form-group">
+                <div class="form-group ">
                 <label>Level</label>
-                    <select name="id_level" class="form-control" onchange="myFunction()">
-                        <option> </option>
+                    <select  select id = "id_level" class="form-control" onchange = "ShowHideDiv()">
+                    <option disabled selected ></option>
                         @foreach ($Level_array as $data)
-                        <option value="{{ $data->id_level }}" name="id_level" >{{$data->nama_level}}</option>
+                        <option value="{{ $data->id_level }}" name="id_level"  >{{$data->nama_level}}</option>
+                      
                         @endforeach
                     </select>
                 </div>

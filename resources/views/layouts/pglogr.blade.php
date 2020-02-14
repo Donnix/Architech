@@ -27,4 +27,16 @@
           @yield('content')             
       </div>
 </body>
+
+<script type="text/javascript">
+    function ShowHideDiv() {
+        var id_level = document.getElementById("id_level");
+        var jumlah_perkerja = document.getElementById("jumlah_perkerja");
+        jumlah_perkerja.style.display = id_level.value == "2" ? "block" : "none";
+       
+        if(id_level.value == "2"){
+         value.jumlah_perkerja = console.log(1);
+        }
+    }
+</script>
 </html>
