@@ -24,11 +24,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
     <link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
     <script src="{{asset('js/stylejs.js')}}"></script>
 
 </head>
 <body>
-<div class="header">
+<div class="header" id="home">
     <div class="container">
         <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
             <div class="col-lg-12 d-block">
@@ -48,9 +49,9 @@
     </div>
 </div>    
 
-<nav class="nvg navbar navbar-expand-md navbar-light bg-warning sticky-top shadow-lg">
+<nav class="nvg navbar navbar-expand-md navbar-light bg-warning sticky-top shadow-lg" id="navbar">
     <div class="container">
-        <a href="#" class="navbar-brand mr-3"><img src="img/lgg.png"></a>
+        <a href="#home" class="navbar-brand mr-3"><img src="img/lgg.png"></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -63,7 +64,7 @@
                         <a href="#" class="dropdown-item">Desain Rumah</a>
                         <a href="#" class="dropdown-item">Furniture</a>
                         <a href="#" class="dropdown-item">Cari Tanah</a>
-                        <a href="#" class="dropdown-item">Kebutuhan Material</a>
+                        <a href="#services" class="dropdown-item">Kebutuhan Material</a>
                         <a href="#" class="dropdown-item">Token</a>
                     </div>
                 </div>
@@ -240,22 +241,21 @@
 </footer>
 <!-- Footer -->
 <script type="text/javascript">
-window.addEventListener('scroll', function() {
- navbarScroll();
-});
-function navbarScroll() {
-  var y = window.scrollY;
-  if (y > 100) {
-    var nvg = document.getElementsByClassName('navbar')[0];
-      nvg.classList.add('small');
+// NAVBAR
+window.onscroll = function() {scrollFunction()};
 
-  } else if (y < 100) {
-      var nvg = document.getElementsByClassName('navbar')[0];
-     nvg.classList.remove('small');
+function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    document.getElementById("navbar").style.padding = "20px";
+  } else {
+    document.getElementById("navbar").style.padding = "31px";
   }
 }
 
+// END NAVBAR
 
+
+// DROPDOWN
 $(document).ready(function () {
 $('.navbar-collapse .dropdown').hover(function () {
         $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
@@ -263,8 +263,10 @@ $('.navbar-collapse .dropdown').hover(function () {
         $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
     });
 });
+// END DROPDOWN
 
 
+// PROJECT
 $('.portfolio-item').isotope({
 itemSelector: '.item',
 layoutMode: 'fitRows'
@@ -288,8 +290,10 @@ var popup_btn = $('.popup-btn');
     }
 });
 });
+// END PROJECT
 
 
+// COUNTER
 $(document).ready(function() {
 
 $('.counter').each(function () {
@@ -305,8 +309,10 @@ $(this).text(Math.ceil(now));
 });
 
 });
+// END COUNTER
 
 
+// SLIDER
 $(document).ready(function(){
     $('.customer-logos').slick({
         slidesToShow: 6,
@@ -329,6 +335,9 @@ $(document).ready(function(){
         }]
     });
 });
+// END SLIDER
+
+
 </script>
 </body>
 </html>                             

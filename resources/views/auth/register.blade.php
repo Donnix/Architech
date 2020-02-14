@@ -7,7 +7,7 @@
             @csrf
             <div class="form-group">
                 <label>{{ __('Name') }}</label>
-                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                <input id="name" type="name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
                     @error('name')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -27,7 +27,7 @@
             
             <div class="form-group">
                 <label>Level</label>
-                    <select name="id_level" class="form-control">
+                    <select name="id_level" class="form-control" onchange="myFunction()">
                         <option> </option>
                         @foreach ($Level_array as $data)
                         <option value="{{ $data->id_level }}" name="id_level" >{{$data->nama_level}}</option>
@@ -45,7 +45,7 @@
                     @enderror
                 </div>
             
-            <div class="form-group">
+            <div class="form-group" id="hilang">
                 <label>{{ __('Jumlah perkerja') }}</label>
                     <input id="jumlah_perkerja" type="text" class="form-control @error('jumlah_perkerja') is-invalid @enderror" name="jumlah_perkerja" value="{{ old('jumlah_perkerja') }}" required autocomplete="jumlah_perkerja" autofocus>
                     @error('jumlah_perkerja')

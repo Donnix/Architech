@@ -3,23 +3,21 @@
         font-family: Bahnschrift, Helvetica, sans-serif;
     }
     
-    
+    /*HEADER*/
     .header{
         background-color: #333333;
     }
-    
-
     span{
          color:white;
          word-spacing:1px;
     }
+    /*END HEADER*/
+    
+
+    /*NAVIGASI*/
     .navbar{
-        height: 115px;
+        padding: 30px;
         transition: .3s ease;
-    }
-    .small{
-        height: 100px;
-        font-size: 16px;
     }
      .dropdown .navbar-nav .nav-link:focus, .dropdown .nav-link:hover{
         color: black;
@@ -44,8 +42,10 @@
         text-decoration: none;
         background-color: #2196F3;
     }
+    /*END NAVIGASI*/
     
 
+    /*CAROUSEL*/
     .carousel-inner img {
         width: 100%; /* Set width to 100% */
         height: 100%;
@@ -74,18 +74,23 @@
     .project-text hr{
         margin: 50px;
     }
+    /*END CAROUSEL*/
 
+
+    /*CONTACT*/
     .contactus-btn{
         padding: 75px;
         transition: 0.5s ease;
     }
+    /*END CONTACT*/
 
 
-  .counter-section i {
-    display: block;
-    margin: 0 0 10px;
+  /*COUNTER*/
+ .cntr{
+        padding: 50px;
+        transition: 0.5s ease;
   }
-  .counter-section span.counter {
+ .counter {
     font-size: 40px;
     color: #000;
     line-height: 60px;
@@ -124,19 +129,21 @@
     font-size: 40px !important;
     margin-bottom: 15px !important;
  }
+ /*END COUNTER*/
 
- 
- .section-title {
+  
+  /*TITLE*/
+  .section-title {
     position: relative
   }
   .section-title p {
     font-size: 16px;
     margin-bottom: 5px;
-    font-weight: 400;
+    font-weight: 400px;
   }
   .section-title h4 {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 600px;
     text-transform: capitalize;
     position: relative;
     padding-bottom: 20px;
@@ -172,6 +179,10 @@
   .mb-100{
     margin-bottom:100px;
   }
+  /*END TITLE*/
+
+
+  /*SERVICE*/
   .services {
     background-color: #FBFBFB;
   }
@@ -243,8 +254,10 @@
     font-size: 15px;
     line-height: 1.8;
   }
+  /*END SERVICE*/
 
 
+/*PROJECT*/
 .portfolio-menu{
   text-align:center;
 }
@@ -260,7 +273,6 @@
   -o-transition:all 05s ease;
   transition:all .5s ease;
 }
-
 .portfolio-item{
   /*width:100%;*/
 }
@@ -269,8 +281,10 @@
   float:left;
   margin-bottom:10px;
 }
+/*END PROJECT*/
 
 
+/*TEAM*/
 .pt-100{
     padding-top:100px;
 }
@@ -320,18 +334,16 @@
 .single-team {
   overflow: hidden;
 }
+/*END TEAM*/
 
 
-/* Slider */
-
+/*SLIDER*/
 .slick-slide {
-    margin: 0px 20px;
+    margin: 0px 15px;
 }
-
 .slick-slide img {
     width: 100%;
 }
-
 .slick-slider
 {
     position: relative;
@@ -347,7 +359,6 @@
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
-
 .slick-list
 {
     position: relative;
@@ -365,7 +376,6 @@
     cursor: pointer;
     cursor: hand;
 }
-
 .slick-slider .slick-track,
 .slick-slider .slick-list
 {
@@ -375,7 +385,6 @@
          -o-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
 }
-
 .slick-track
 {
     position: relative;
@@ -402,7 +411,6 @@
 {
     display: none;
     float: left;
-    height: 100%;
     min-height: 1px;
 }
 [dir='rtl'] .slick-slide
@@ -438,12 +446,10 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-.main-head{
-    height: 150px;
-    background: #FFF;  
-}
+/*END SLIDER*/
 
 
+/*LOGIN REGS*/
 .sidenav {
     height: 100%;
     background-color: #ffc107;
@@ -451,7 +457,7 @@
     padding-top: 20px;
 }
 .main {
-    padding: 0px 10px;
+    padding: 10px;
 }
 @media screen and (max-height: 450px) {
     .sidenav {
@@ -499,7 +505,10 @@
    text-decoration: none;
    color: black;
 }
+/*END LOGIN REGS*/
 
+
+/*FOOTER*/
   footer{
     background-color: #333333;
     color:white;
@@ -512,3 +521,4 @@
   a:active{
     color: #ffc107;
   }
+/*END FOOTER*/

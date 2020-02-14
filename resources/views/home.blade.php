@@ -170,9 +170,9 @@
                 </div>
             </div>
         </div>
-    </section><br>
+    </section>
 
-<div class="container">
+<div class="container pt-100 pb-50">
          <div class="row">
                <div class="col-xl-6 mx-auto text-center">
                   <div class="section-title mb-100">
@@ -214,17 +214,8 @@
          </div>
       </div><br><br><br><br><br>
 
-<div class="section-title">
-    <div class="row">
-        <div class="col-xl-6 mx-auto text-center">
-            <div class="section-title mb-10">
-                <p>what i can do</p>
-                <h4>happy client</h4>
-            </div>
-        </div>
-    </div>
-</div>
-<section class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+
+<section class="cntr bg-warning bg-overlay-1 ptb-80 wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
     <div class="container">
         <div class="row">
             <!-- counter -->
@@ -239,9 +230,9 @@
             <div class="col-md-3 col-sm-6 text-center counter-section wow fadeInUp animated" data-wow-duration="1200ms" style="visibility: visible; animation-duration: 1200ms; animation-name: fadeInUp;"> <i class="fa fa-user medium-icon"></i> <span class="timer counter alt-font appear" data-to="600" data-speed="10000">600</span> <span class="counter-title">Clients Served</span> </div> <!-- end counter -->
         </div>
     </div>
-</section><br><br><br>
+</section>
 
-<div class="container">
+<div class="container pt-100 pb-50">
   <div class="section-title">
     <div class="row">
         <div class="col-xl-6 mx-auto text-center">

@@ -1,0 +1,12 @@
+* {
+      margin: 0px;
+      padding: 0;
+      scroll-behavior: smooth;
+      transition: 0.5s ease-out;
+    }
+.dropdown *{
+	transition: none;
+}
+.portfolio-item *{
+	transition: none;
+}

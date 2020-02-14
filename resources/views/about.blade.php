@@ -28,43 +28,17 @@
   </div>
 </section>
 
-
-<div class="section-title">
-    <div class="row">
-        <div class="col-xl-6 mx-auto text-center">
-            <div class="section-title mb-100">
-                <p>what i can do</p>
-                <h4>happy client</h4>
-            </div>
-        </div>
-    </div>
-</div>
-<section class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
-    <div class="container">
-        <div class="row">
-            <!-- counter -->
-            <div class="col-md-3 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms" style="visibility: visible; animation-duration: 300ms; animation-name: fadeInUp;"> <i class="fa fa-beer medium-icon"></i> <span id="anim-number-pizza" class="counter-number"></span> <span class="timer counter alt-font appear" data-to="980" data-speed="10000">2800</span>
-                <p class="counter-title">Beer Ordered</p>
-            </div> <!-- end counter -->
-            <!-- counter -->
-            <div class="col-md-3 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="600ms" style="visibility: visible; animation-duration: 600ms; animation-name: fadeInUp;"> <i class="fa fa-heart medium-icon"></i> <span class="timer counter alt-font appear" data-to="980" data-speed="10000">980</span> <span class="counter-title">Happy Clients</span> </div> <!-- end counter -->
-            <!-- counter -->
-            <div class="col-md-3 col-sm-6 bottom-margin-small text-center counter-section wow fadeInUp xs-margin-bottom-ten animated" data-wow-duration="900ms" style="visibility: visible; animation-duration: 900ms; animation-name: fadeInUp;"> <i class="fa fa-anchor medium-icon"></i> <span class="timer counter alt-font appear" data-to="810" data-speed="10000">810</span> <span class="counter-title">Projects Completed</span> </div> <!-- end counter -->
-            <!-- counter -->
-            <div class="col-md-3 col-sm-6 text-center counter-section wow fadeInUp animated" data-wow-duration="1200ms" style="visibility: visible; animation-duration: 1200ms; animation-name: fadeInUp;"> <i class="fa fa-user medium-icon"></i> <span class="timer counter alt-font appear" data-to="600" data-speed="10000">600</span> <span class="counter-title">Clients Served</span> </div> <!-- end counter -->
-        </div>
-    </div>
-</section><br>
-
-<section class="team-area pt-100 pb-100" id="team">
-        <div class="container">
-            <div class="row">
-               <div class="col-xl-6 mx-auto text-center">
+<section class="team-area pt-100 pb-50" id="team">
+  <div class="container">
+      <div class="section-title">
+          <div class="row">
+              <div class="col-xl-6 mx-auto text-center">
                   <div class="section-title mb-100">
-                     <p>what i can do</p>
-                     <h4>my team</h4>
+                    <p>what i can do</p>
+                    <h4>team other</h4>
                   </div>
-               </div>
+                </div>
+              </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
@@ -105,13 +79,14 @@
                 </div>
             </div>
         </div>
-      </section>
+    </div>
+</section>
 
-<div class="container">
+<div class="container pt-100 pb-50">
   <div class="section-title">
     <div class="row">
         <div class="col-xl-6 mx-auto text-center">
-            <div class="section-title mb-10">
+            <div class="section-title mb-100">
                 <p>what i can do</p>
                 <h4>team other</h4>
             </div>
@@ -129,24 +104,23 @@
       <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
       <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
    </section>
-</div>
+</div><br><br><br><br><br>
+
+<section class="cntr bg-warning bg-overlay-1 ptb-80 wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+    <div class="container">
+        <div class="row">
+            <!-- counter -->
+            <div class="col-md-3 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms" style="visibility: visible; animation-duration: 300ms; animation-name: fadeInUp;"> <i class="fa fa-beer medium-icon"></i> <span id="anim-number-pizza" class="counter-number"></span> <span class="timer counter alt-font appear" data-to="980" data-speed="10000">2800</span>
+                <p class="counter-title">Beer Ordered</p>
+            </div> <!-- end counter -->
+            <!-- counter -->
+            <div class="col-md-3 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="600ms" style="visibility: visible; animation-duration: 600ms; animation-name: fadeInUp;"> <i class="fa fa-heart medium-icon"></i> <span class="timer counter alt-font appear" data-to="980" data-speed="10000">980</span> <span class="counter-title">Happy Clients</span> </div> <!-- end counter -->
+            <!-- counter -->
+            <div class="col-md-3 col-sm-6 bottom-margin-small text-center counter-section wow fadeInUp xs-margin-bottom-ten animated" data-wow-duration="900ms" style="visibility: visible; animation-duration: 900ms; animation-name: fadeInUp;"> <i class="fa fa-anchor medium-icon"></i> <span class="timer counter alt-font appear" data-to="810" data-speed="10000">810</span> <span class="counter-title">Projects Completed</span> </div> <!-- end counter -->
+            <!-- counter -->
+            <div class="col-md-3 col-sm-6 text-center counter-section wow fadeInUp animated" data-wow-duration="1200ms" style="visibility: visible; animation-duration: 1200ms; animation-name: fadeInUp;"> <i class="fa fa-user medium-icon"></i> <span class="timer counter alt-font appear" data-to="600" data-speed="10000">600</span> <span class="counter-title">Clients Served</span> </div> <!-- end counter -->
+        </div>
+    </div>
+</section>
 
 @endsection
-
-<script type="text/javascript">
-$(document).ready(function() {
-
-$('.counter').each(function () {
-$(this).prop('Counter',0).animate({
-Counter: $(this).text()
-}, {
-duration: 10000,
-easing: 'swing',
-step: function (now) {
-$(this).text(Math.ceil(now));
-}
-});
-});
-
-});
-</script>
