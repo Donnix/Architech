@@ -6,7 +6,7 @@
 @section('content')
     
 <section class="banner_area" data-stellar-background-ratio="0.5">
-    <h2>Kontak</h2>
+    <h2>CONTACT US</h2>
     <ol class="breadcrumb"></ol>
 </section>
 
@@ -42,8 +42,8 @@
       
   </div>
   <div class="col-md-4">
-    <b>INFO KONTAK:</b> <br/>
-    Bogor : Jl. Raya Wangun No.21, Sindangsari, Kec. Bogor Tim., Kota Bogor, Jawa Barat 16146<br/>
+    <b>CONTACT INFO:</b> <br/>
+    Bandung : Jl. Raya Wangun No.21, Sindangsari, Kec. Bogor Tim., Kota Bogor, Jawa Barat 16146<br/>
     Phone: +62 896 4370 6807<br/>
     E-mail: <a href="" style="color: black;">architect@gmail.com</a><br/>
     <br/>
@@ -53,7 +53,7 @@
     E-mail: <a href="" style="color: black;">architect@gmail.com</a><br/>
     <br>
     
-    Bogor : Jl. Raya Wangun No.21, Sindangsari, Kec. Bogor Tim., Kota Bogor, Jawa Barat 16146<br/>
+    Yogyakarta : Jl. Raya Wangun No.21, Sindangsari, Kec. Bogor Tim., Kota Bogor, Jawa Barat 16146<br/>
     Phone: +62 896 4370 6807<br/>
     E-mail: <a href="" style="color: black;">architect@gmail.com</a><br/>
   </div>

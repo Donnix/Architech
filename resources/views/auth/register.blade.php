@@ -16,7 +16,7 @@
                 </div>
             
             <div class="form-group">
-                <label>{{ __('Alamat') }}</label>
+                <label>{{ __('Address') }}</label>
                 <input id="alamat" type="text" class="form-control @error('alamat') is-invalid @enderror" name="alamat" value="{{ old('alamat') }}" required autocomplete="alamat" autofocus>
                     @error('alamat')
                         <span class="invalid-feedback" role="alert">
@@ -27,11 +27,10 @@
             
                 <div class="form-group ">
                 <label>Level</label>
-                    <select  select id = "id_level" class="form-control" onchange = "ShowHideDiv()">
+                    <select name = "id_level" class="form-control" id="level" onchange = "ShowHideDiv()">
                     <option disabled selected ></option>
                         @foreach ($Level_array as $data)
                         <option value="{{ $data->id_level }}" name="id_level"  >{{$data->nama_level}}</option>
-                      
                         @endforeach
                     </select>
                 </div>
@@ -46,8 +45,8 @@
                     @enderror
                 </div>
             
-            <div class="form-group" id="hilang">
-                <label>{{ __('Jumlah perkerja') }}</label>
+            <div class="form-group" id="jumlah_perkerja">
+                <label>{{ __('Total Contractor') }}</label>
                     <input id="jumlah_perkerja" type="text" class="form-control @error('jumlah_perkerja') is-invalid @enderror" name="jumlah_perkerja" value="{{ old('jumlah_perkerja') }}" required autocomplete="jumlah_perkerja" autofocus>
                     @error('jumlah_perkerja')
                         <span class="invalid-feedback" role="alert">

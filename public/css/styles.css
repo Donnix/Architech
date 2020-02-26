@@ -1,8 +1,10 @@
     body{
         background: linear-gradient(to bottom, #ffffff 0%,  #fff8dc 100%);
         font-family: Bahnschrift, Helvetica, sans-serif;
+        min-height: 100vh;
     }
     
+
     /*HEADER*/
     .header{
         background-color: #333333;
@@ -138,7 +140,6 @@
   }
   .section-title p {
     font-size: 16px;
-    margin-bottom: 5px;
     font-weight: 400px;
   }
   .section-title h4 {
@@ -170,14 +171,8 @@
     left: 50%;
     margin-left: -25px;
   }
-  .pt-100 {
-    padding-top: 100px;
-  }
-  .pb-100 {
-    padding-bottom: 100px;
-  }
   .mb-100{
-    margin-bottom:100px;
+    margin-bottom:10px;
   }
   /*END TITLE*/
 
@@ -258,6 +253,23 @@
 
 
 /*PROJECT*/
+.section{
+  background: url("../img/19.jpg") no-repeat fixed;
+  background-position: center;
+  position: relative;
+  z-index: 1; 
+  }
+.section:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}
 .portfolio-menu{
   text-align:center;
 }
@@ -447,65 +459,6 @@
     display: none;
 }
 /*END SLIDER*/
-
-
-/*LOGIN REGS*/
-.sidenav {
-    height: 100%;
-    background-color: #ffc107;
-    overflow-x: hidden;
-    padding-top: 20px;
-}
-.main {
-    padding: 10px;
-}
-@media screen and (max-height: 450px) {
-    .sidenav {
-      padding-top: 15px;
-    }
-}
-@media screen and (max-width: 450px) {
-    .login-form{
-        margin-top: 10%;
-    }
-
-    .register-form{
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-}
-@media screen and (min-width: 768px){
-    .main{
-        margin-left: 40%; 
-    }
-    .sidenav{
-        width: 40%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-    }
-    .login-form{
-        margin-top: 60%;
-    }
-    .register-form{
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-}
-.login-main-text{
-    margin-top: 30%;
-    padding: 60px;
-    color: #fff;
-}
-.login-main-text h2{
-    font-weight: 300;
-}
-.login-main-text a{
-   text-decoration: none;
-   color: black;
-}
-/*END LOGIN REGS*/
 
 
 /*FOOTER*/

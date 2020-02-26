@@ -29,7 +29,7 @@
 
 </head>
 <body>
-<div class="header" id="home">
+  <div class="header" id="home">
     <div class="container">
         <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
             <div class="col-lg-12 d-block">
@@ -57,9 +57,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="/" class="nav-item nav-link active">Beranda</a>
+                <a href="/" class="nav-item nav-link active">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Layanan</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
                     <div class="dropdown-menu">
                         <a href="#" class="dropdown-item">Desain Rumah</a>
                         <a href="#" class="dropdown-item">Furniture</a>
@@ -75,8 +75,8 @@
                         <a href="#" class="dropdown-item">Arsitek</a>
                     </div>
                 </div>
-                    <a href="contact" class="nav-item nav-link">Kontak</a>
-                    <a href="/about" class="nav-item nav-link">Tentang</a>
+                    <a href="contact" class="nav-item nav-link" >Contact</a>
+                    <a href="/about" class="nav-item nav-link" >About</a>
                 </div>
                 <div class="navbar-nav ml-auto">
                   @guest
@@ -117,7 +117,9 @@
       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
         <img src="img/ccc.png">
         <br><br>
-        <p style="text-align: justify;">Architect ini menyediakan jasa dan layanan Arsitektur, tukang, kebutuhan material, furniture, dan penjualan Tanah</p>
+        <p style="text-align: justify;">Not the beauty of the building you need to see, but how the foundation is built will be tesded by time.
+
+</p>
       </div>
       <!-- Grid column -->
 
@@ -125,7 +127,7 @@
 
       <!-- Grid column -->
       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold" style="color:#ffc107;">Pelayanan</h6>
+        <h6 class="text-uppercase mb-4 font-weight-bold" style="color:#ffc107;">SERVICES</h6>
         <p>
           <a href="#!">Desain Rumah</a>
         </p>
@@ -148,21 +150,21 @@
 
       <!-- Grid column -->
       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold" style="color:#ffc107;">Navigasi</h6>
+        <h6 class="text-uppercase mb-4 font-weight-bold" style="color:#ffc107;">NAVIGATION</h6>
         <p>
-          <a href="/">Beranda</a>
+          <a href="/">Home</a>
         </p>
         <p>
-          <a href="#!">Layanan</a>
+          <a href="#!">Services</a>
         </p>
         <p>
           <a href="#!">Jasa</a>
         </p>
         <p>
-          <a href="contact">Kontak</a>
+          <a href="contact">Contact</a>
         </p>
         <p>
-          <a href="/about">Tentang</a>
+          <a href="/about">About</a>
         </p>
       </div>
 
@@ -171,7 +173,7 @@
 
       <!-- Grid column -->
       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold" style="color:#ffc107;">Alamat</h6>
+        <h6 class="text-uppercase mb-4 font-weight-bold" style="color:#ffc107;">Address</h6>
         <p style="text-align: justify;" >
           <i class="fa fa-map-marker mr-3"></i> Jl. Raya Wangun No.21, Sindangsari, Kec. Bogor Tim., Kota Bogor, Jawa Barat 16146</p>
         <p>
@@ -179,7 +181,7 @@
         <p>
           <i class="fa fa-phone mr-3"></i> +6257 2479 4834</p>
         <p>
-          <i class="fa fa-clock-o mr-3"></i> Sen - Jum: 9:00 am- 4:00pm</p>
+          <i class="fa fa-clock-o mr-3"></i> Sun - Fry: 9:00 am- 4:00pm</p>
       </div>
       <!-- Grid column -->
 
@@ -237,7 +239,6 @@
 
   </div>
   <!-- Footer Links -->
-
 </footer>
 <!-- Footer -->
 <script type="text/javascript">
@@ -300,7 +301,7 @@ $('.counter').each(function () {
 $(this).prop('Counter',0).animate({
 Counter: $(this).text()
 }, {
-duration: 10000,
+duration: 20000,
 easing: 'swing',
 step: function (now) {
 $(this).text(Math.ceil(now));
