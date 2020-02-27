@@ -47,7 +47,7 @@
             
             <div class="form-group" id="jumlah_perkerja">
                 <label>{{ __('Total Contractor') }}</label>
-                    <input id="jumlah_perkerja" type="text" class="form-control @error('jumlah_perkerja') is-invalid @enderror" name="jumlah_perkerja" value="{{ old('jumlah_perkerja') }}" required autocomplete="jumlah_perkerja" autofocus>
+                    <input id="jumlah_perkerja" type="text" class="form-control @error('jumlah_perkerja') is-invalid @enderror" name="jumlah_perkerja" >
                     @error('jumlah_perkerja')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>

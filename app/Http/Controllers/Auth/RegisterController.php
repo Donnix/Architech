@@ -54,7 +54,6 @@ class RegisterController extends Controller
             'alamat' => ['required', 'string'],
             'id_level' => ['required', 'integer'],
             'no_hp' => ['required', 'string'],
-            'jumlah_perkerja' => ['required', 'integer'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             
