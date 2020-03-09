@@ -26,17 +26,16 @@
                 </div>
             
                 <div class="form-group ">
-                <label>Level</label>
-                    <select name = "id_level" class="form-control" id="level" onchange = "ShowHideDiv()">
+                <label>Gender</label>
+                    <select name = "gender" class="form-control" id="gender">
                     <option disabled selected ></option>
-                        @foreach ($Level_array as $data)
-                        <option value="{{ $data->id_level }}" name="id_level"  >{{$data->nama_level}}</option>
-                        @endforeach
-                    </select>
+                    <option value="L">Male</option>
+                    <option value="P">Female</option>
+                     </select>
                 </div>
             
             <div class="form-group">
-                <label>{{ __('No hp') }}</label>
+                <label>{{ __('Phone Number') }}</label>
                 <input id="no_hp" type="text" class="form-control @error('no_hp') is-invalid @enderror" name="no_hp" value="{{ old('no_hp') }}" required autocomplete="no_hp" autofocus>
                     @error('no_hp')
                         <span class="invalid-feedback" role="alert">
@@ -45,7 +44,7 @@
                     @enderror
                 </div>
             
-            <div class="form-group" id="jumlah_perkerja">
+            <!-- <div class="form-group" id="jumlah_perkerja">
                 <label>{{ __('Total Contractor') }}</label>
                     <input id="jumlah_perkerja" type="text" class="form-control @error('jumlah_perkerja') is-invalid @enderror" name="jumlah_perkerja" >
                     @error('jumlah_perkerja')
@@ -53,7 +52,7 @@
                             <strong>{{ $message }}</strong>
                         </span>
                     @enderror
-                </div>
+                </div> -->
             
             <div class="form-group">
                 <label>{{ __('E-Mail Address') }}</label>
