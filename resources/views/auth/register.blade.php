@@ -18,6 +18,7 @@
             <div class="form-group">
                 <label>{{ __('Address') }}</label>
                 <input id="alamat" type="text" class="form-control @error('alamat') is-invalid @enderror" name="alamat" value="{{ old('alamat') }}" required autocomplete="alamat" autofocus>
+<<<<<<< HEAD
                 @error('alamat')
                 <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
@@ -33,9 +34,28 @@
                     @endforeach
                 </select>
             </div>
+=======
+                    @error('alamat')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                </div>
+            
+                <div class="form-group ">
+                <label>Gender</label>
+                    <select name = "gender" class="form-control" id="gender">
+                    <option disabled selected ></option>
+                    <option value="L">Male</option>
+                    <option value="P">Female</option>
+                     </select>
+                </div>
+            
+>>>>>>> 15e5820aefe0e42137d3b4a2a0b6afd84bda656e
             <div class="form-group">
-                <label>{{ __('No hp') }}</label>
+                <label>{{ __('Phone Number') }}</label>
                 <input id="no_hp" type="text" class="form-control @error('no_hp') is-invalid @enderror" name="no_hp" value="{{ old('no_hp') }}" required autocomplete="no_hp" autofocus>
+<<<<<<< HEAD
                 @error('no_hp')
                 <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
@@ -51,6 +71,25 @@
                 </span>
                 @enderror
             </div>
+=======
+                    @error('no_hp')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                </div>
+            
+            <!-- <div class="form-group" id="jumlah_perkerja">
+                <label>{{ __('Total Contractor') }}</label>
+                    <input id="jumlah_perkerja" type="text" class="form-control @error('jumlah_perkerja') is-invalid @enderror" name="jumlah_perkerja" >
+                    @error('jumlah_perkerja')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                </div> -->
+            
+>>>>>>> 15e5820aefe0e42137d3b4a2a0b6afd84bda656e
             <div class="form-group">
                 <label>{{ __('E-Mail Address') }}</label>
                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
