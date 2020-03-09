@@ -1,103 +1,136 @@
+
+
 <head>
     <link rel="stylesheet" type="text/css" href="{{asset('css/stylact.css')}}">
 </head>
-@extends ('layouts.headft')
 
-@section ('content')
+@extends('layouts.headft')
+@section('content')
+
 <section class="banner_area" data-stellar-background-ratio="0.5">
-    <h2>Detail</h2>
+    <h2>ARCHITECT</h2>
     <ol class="breadcrumb"></ol>
-</section><br>
+</section>
+<br>
 
-    <div class="container wow fadeIn" data-wow-duration=".5s ease-in-out">
-        <div class="row">
-            <div class="col-12">
-
-                    <div class="card-body">
-                        <div class="card-title mb-4">
-                            <div class="d-flex justify-content-start">
-                                <div class="image-container">
-                                    <img src="img/k.jpg" id="imgProfile" style="width: 150px; height: 150px" class="img-thumbnail" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12">
-                                <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" id="basicInfo-tab" data-toggle="tab" href="#basicInfo" role="tab" aria-controls="basicInfo" aria-selected="true">Basic Info</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="connectedServices-tab" data-toggle="tab" href="#connectedServices" role="tab" aria-controls="connectedServices" aria-selected="false">Connected Services</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content ml-1" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="basicInfo" role="tabpanel" aria-labelledby="basicInfo-tab">
-                                        
-
-                                        <div class="row">
-                                            <div class="col-sm-3 col-md-2 col-5">
-                                                <label style="font-weight:bold;">Full Name</label>
-                                            </div>
-                                            <div class="col-md-8 col-6">
-                                                Jamshaid Kamran
-                                            </div>
-                                        </div>
-                                        <hr />
-
-                                        <div class="row">
-                                            <div class="col-sm-3 col-md-2 col-5">
-                                                <label style="font-weight:bold;">Birth Date</label>
-                                            </div>
-                                            <div class="col-md-8 col-6">
-                                                March 22, 1994.
-                                            </div>
-                                        </div>
-                                        <hr />
-                                        
-                                        
-                                        <div class="row">
-                                            <div class="col-sm-3 col-md-2 col-5">
-                                                <label style="font-weight:bold;">Something</label>
-                                            </div>
-                                            <div class="col-md-8 col-6">
-                                                Something
-                                            </div>
-                                        </div>
-                                        <hr />
-                                        <div class="row">
-                                            <div class="col-sm-3 col-md-2 col-5">
-                                                <label style="font-weight:bold;">Something</label>
-                                            </div>
-                                            <div class="col-md-8 col-6">
-                                                Something
-                                            </div>
-                                        </div>
-                                        <hr />
-                                        <div class="row">
-                                            <div class="col-sm-3 col-md-2 col-5">
-                                                <label style="font-weight:bold;">Something</label>
-                                            </div>
-                                            <div class="col-md-8 col-6">
-                                                Something
-                                            </div>
-                                        </div>
-                                        <hr />
-
-                                    </div>
-                                    <div class="tab-pane fade" id="connectedServices" role="tabpanel" aria-labelledby="ConnectedServices-tab">
-                                        Facebook, Google, Twitter Account that are connected to this account
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
+<section class="details-card">
+    <div class="container">
+        <div class="section-title">
+            <div class="row wow fadeIn" data-wow-duration=".5s ease-in-out">
+                <div class="col-xl-6 mx-auto text-center">
+                    <div class="section-title mb-100">
+                        <p>what i can do</p>
+                        <h4>Our Workers</h4>
                     </div>
-
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card-content wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms">
+                    <div class="card-img">
+                        <img src="img/p.jpg" alt="">
+                        <span>
+                            <h4>Architect</h4>
+                        </span>
+                    </div>
+                    <div class="card-desc">
+                        <h3>Info Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+                            voluptas totam
+                        </p>
+                        <a href="detail" class="btn-card">Read</a>   
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card-content wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="500ms">
+                    <div class="card-img">
+                        <img src="img/i.jpg" alt="">
+                        <span>
+                            <h4>Architect</h4>
+                        </span>
+                    </div>
+                    <div class="card-desc">
+                        <h3>Info Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+                            voluptas totam
+                        </p>
+                        <a href="detail" class="btn-card">Read</a>   
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card-content wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="700ms">
+                    <div class="card-img">
+                        <img src="img/k.jpg" alt="">
+                        <span>
+                            <h4>Architect</h4>
+                        </span>
+                    </div>
+                    <div class="card-desc">
+                        <h3>Info Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+                            voluptas totam
+                        </p>
+                        <a href="detail" class="btn-card">Read</a>   
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card-content wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="900ms">
+                    <div class="card-img">
+                        <img src="img/kp.jpg" alt="">
+                        <span>
+                            <h4>Architect</h4>
+                        </span>
+                    </div>
+                    <div class="card-desc">
+                        <h3>Info Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+                            voluptas totam
+                        </p>
+                        <a href="detail" class="btn-card">Read</a>   
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card-content wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="1100ms">
+                    <div class="card-img">
+                        <img src="img/j.jpg" alt="">
+                        <span>
+                            <h4>Architect</h4>
+                        </span>
+                    </div>
+                    <div class="card-desc">
+                        <h3>Info Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+                            voluptas totam
+                        </p>
+                        <a href="detail" class="btn-card">Read</a>   
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card-content wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="1300ms">
+                    <div class="card-img">
+                        <img src="img/k.jpg" alt="">
+                        <span>
+                            <h4>Architect</h4>
+                        </span>
+                    </div>
+                    <div class="card-desc">
+                        <h3>Info Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+                            voluptas totam
+                        </p>
+                        <a href="detail" class="btn-card">Read</a>   
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</section>
 
 @endsection
+
