@@ -29,7 +29,7 @@
             </div>
         </div>
         
-        <div class="main wow fadeInLeft" data-wow-duration="2s ease-out">
+        <div class="main">
             @yield('content')             
         </div>
         

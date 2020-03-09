@@ -8,66 +8,75 @@ transition: 0.5s ease-out;
 }
 /*LOGIN REGS*/
 .sidenav {
-height: 100%;
-background-color: #ffc107;
-overflow-x: hidden;
-padding-top: 20px;
+    height: 100%;
+    background-color: #ffc107;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
 .main {
-min-height: 100vh;
-padding: 50px 0px 100px 0px;
-border-radius: 10px 0px 0px 10px;
+    padding: 0px 10px;
 }
 @media screen and (max-height: 450px) {
-.sidenav {
-padding-top: 15px;
-}
+    .sidenav {
+      padding-top: 15px;
+    }
 }
 @media screen and (max-width: 450px) {
-.login-form{
-margin-top: 15%;
-}
-.register-form{
-margin-top: 15%;
-}
-.login-main-text{
-margin-top: 50%;
-margin-left: -10%;
+    .login-form{
+        margin-top: 10%;
+        margin-bottom: 1%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .login-main-text{
+    margin-top: 30%;
+    margin-left:-15px;
+    padding: 60px;
+    color: #fff;
 }
 }
 @media screen and (min-width: 768px){
-.main{
-margin-left: 40%; 
+    .main{
+        margin-left: 40%; 
+    }
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+    .login-form{
+        margin-top: 60%;
+        margin-bottom: 5%;
+    }
+    .register-form{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .login-main-text{
+    margin-top: 30%;
+    margin-left:-15px;
+    padding: 60px;
+    color: #fff;
 }
-.sidenav{
-width: 40%;
-position: fixed;
-z-index: 1;
-top: 0;
-left: 0;
-}
-.login-form{
-margin-top: 55%;
-}
-.register-form{
-margin-top: 10%;
+
 }
 .login-main-text{
-margin-top: 50%;
-margin-left: -10%; 
+    margin-top: 30%;
+    margin-left: -25px;
+    padding: 60px;
+    color: #fff;
 }
-}
-.login-main-text{
-margin-top: 50%;
-margin-left: 115px; 
-color: #fff;
-}
-.login-main-text a{
-font-weight: 300px;
+.login-main-text h2{
+    font-weight: 300;
 }
 .login-main-text a{
-text-decoration: none;
-color: black;
+   text-decoration: none;
+   color: black;
 }
 /*END LOGIN REGS*/
 

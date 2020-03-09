@@ -2,7 +2,7 @@
 
 @extends('layouts.pglogr')
 @section('content')
-<div class="col-md-6 col-sm-12">
+<div class="col-md-6 col-sm-12 wow fadeInLeft" data-wow-duration="2s ease-out">
     <div class="login-form">
         <form method="POST" action="{{ route('login') }}">
             @csrf
