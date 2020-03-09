@@ -1,74 +1,73 @@
+
+
 * {
-      margin: 0px;
-      padding: 0;
-      scroll-behavior: smooth;
-      transition: 0.5s ease-out;
-    }
-
-
+margin: 0px;
+padding: 0;
+scroll-behavior: smooth;
+transition: 0.5s ease-out;
+}
 /*LOGIN REGS*/
 .sidenav {
-    height: 100%;
-    background-color: #ffc107;
-    overflow-x: hidden;
-    padding-top: 20px;
+height: 100%;
+background-color: #ffc107;
+overflow-x: hidden;
+padding-top: 20px;
 }
 .main {
-    min-height: 100vh;
-    padding: 50px 0px 100px 0px;
-    border-radius: 10px 0px 0px 10px;
+min-height: 100vh;
+padding: 50px 0px 100px 0px;
+border-radius: 10px 0px 0px 10px;
 }
 @media screen and (max-height: 450px) {
-    .sidenav {
-      padding-top: 15px;
-    }
+.sidenav {
+padding-top: 15px;
+}
 }
 @media screen and (max-width: 450px) {
-    .login-form{
-        margin-top: 15%;
-    }
-
-    .register-form{
-        margin-top: 15%;
-    }
-    .login-main-text{
-        margin-top: 50%;
-        margin-left: -10%;
-    }
-
+.login-form{
+margin-top: 15%;
 }
-@media screen and (min-width: 768px){
-    .main{
-        margin-left: 40%; 
-    }
-    .sidenav{
-        width: 40%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-    }
-    .login-form{
-        margin-top: 55%;
-    }
-    .register-form{
-        margin-top: 10%;
-    }
-    .login-main-text{
-        margin-top: 50%;
-        margin-left: -10%; 
-    }
+.register-form{
+margin-top: 15%;
 }
 .login-main-text{
-    margin-top: 50%;
-    margin-left: 115px; 
-    color: #fff;
+margin-top: 50%;
+margin-left: -10%;
+}
+}
+@media screen and (min-width: 768px){
+.main{
+margin-left: 40%; 
+}
+.sidenav{
+width: 40%;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+}
+.login-form{
+margin-top: 55%;
+}
+.register-form{
+margin-top: 10%;
+}
+.login-main-text{
+margin-top: 50%;
+margin-left: -10%; 
+}
+}
+.login-main-text{
+margin-top: 50%;
+margin-left: 115px; 
+color: #fff;
 }
 .login-main-text a{
-    font-weight: 300px;
+font-weight: 300px;
 }
 .login-main-text a{
-   text-decoration: none;
-   color: black;
+text-decoration: none;
+color: black;
 }
 /*END LOGIN REGS*/
+

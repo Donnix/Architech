@@ -1,55 +1,56 @@
+
+
 .page-footer{
-  background: url("../img/2.jpg") no-repeat fixed;
-  background-position: center;
-  position: relative;
-  z-index: 1;
-    }
-  .page-footer:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  z-index: -1;
+background: url("../img/2.jpg") no-repeat fixed;
+background-position: center;
+position: relative;
+z-index: 1;
 }
-
-
+.page-footer:after {
+content: "";
+position: absolute;
+top: 0;
+background-color: rgba(0, 0, 0, 0.9);
+left: 0;
+right: 0;
+bottom: 0;
+display: block;
+z-index: -1;
+}
 .banner_area {
-  background: url("../img/ff.jpg") no-repeat fixed;
-  background-position: center;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  padding-bottom: 70px;
+background: url("../img/ff.jpg") no-repeat fixed;
+background-position: center;
+text-align: center;
+position: relative;
+z-index: 1;
+padding-bottom: 70px;
 }
 .banner_area:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  z-index: -1;
+content: "";
+position: absolute;
+top: 0;
+background-color: rgba(0, 0, 0, 0.8);
+left: 0;
+right: 0;
+bottom: 0;
+display: block;
+z-index: -1;
 }
 .banner_area h2 {
-  color: #fff;
-  font: 400 40px "Oswald", sans-serif;
-  text-transform: uppercase;
-  padding-top: 85px;
+color: #fff;
+font: 400 40px "Oswald", sans-serif;
+text-transform: uppercase;
+padding-top: 85px;
 }
 .banner_area .breadcrumb {
-  background-color: transparent;
-  padding-top: 15px;
+background-color: transparent;
+padding-top: 15px;
 }
 .banner_area .breadcrumb li a {
-  font: 400 14px "Roboto", sans-serif;
-  color: #fefefe;
+font: 400 14px "Roboto", sans-serif;
+color: #fefefe;
 }
 .banner_area .breadcrumb li a.active {
-  color: #f6b60b;
+color: #f6b60b;
 }
+
