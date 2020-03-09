@@ -4,7 +4,9 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <title>LOGIN || ARCHITECTURE</title>
+   <link rel="icon" type="img/png" href="img/5g.png">
+
+   <title>ARCHITECTURE</title>
 
    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
    
@@ -15,10 +17,17 @@
    <link rel="stylesheet" type="text/css" href="{{asset('css/styllr.css')}}">
    <script src="{{asset('js/stylejs.js')}}"></script>
 </head>
-<body>
+<body><!-- 
+  <div class="loader">
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+  </div> -->
+
    <div class="sidenav">
       <div class="login-main-text">
-         <a href="/"><img src="img/logo.png"></a> 
+         <a href="home"><img src="img/logo.png"></a> 
          <p><a href="login">Login</a> or <a href="register">Register</a> from here to access.</p>
       </div>
    </div>
@@ -26,16 +35,4 @@
       @yield('content')             
    </div>
 </body>
-
-<script type="text/javascript">
-    function ShowHideDiv() {
-        var level = document.getElementById("level");
-        var jumlah_perkerja = document.getElementById("jumlah_perkerja");
-        jumlah_perkerja.style.display = level.value == "2" ? "block" : "none";
-       
-        if(level.value == "2"){
-         value.jumlah_perkerja = console.log(1);
-        }
-    }
-</script>
 </html>

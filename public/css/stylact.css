@@ -1,27 +1,5 @@
-.page-footer{
-      background: url("../img/7.jpg") no-repeat fixed;
-      background-position: center;
-      position: relative;
-      z-index: 1;
-    }
-    .page-footer:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      background-color: rgba(0, 0, 0, 0.9);
-      left: 0;
-      right: 0;
-      bottom: 0;
-      display: block;
-      z-index: -1;
-    }
-
-    .col-md-4{
-      margin-bottom: 30px;
-    }
-
-    .banner_area {
-      background: url("../img/4.jpg") no-repeat fixed;
+.banner_area {
+      background: url("../img/ads.jpg") no-repeat fixed;
       background-position: center;
       text-align: center;
       position: relative;
@@ -39,7 +17,7 @@
       display: block;
       z-index: -1;
     }
-    .banner_area h2 {
+.banner_area h2 {
       color: #fff;
       font: 400 40px "Oswald", sans-serif;
       text-transform: uppercase;
@@ -55,4 +33,23 @@
     }
     .banner_area .breadcrumb li a.active {
       color: #f6b60b;
+    }
+
+
+.page-footer{
+      background: url("../img/7.jpg") no-repeat fixed;
+      background-position: center;
+      position: relative;
+      z-index: 1;
+    }
+    .page-footer:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.9);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      z-index: -1;
     }
