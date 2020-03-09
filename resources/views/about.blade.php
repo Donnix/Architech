@@ -48,7 +48,7 @@
                             <h4>Immam Muji <span>Architecture</span></h4>
                             <a href=""><i class="fa fa-facebook"></i></a>
                             <a href=""><i class="fa fa-twitter"></i></a>
-                            <a href=""><i class="fa fa-youtube"></i></a>
+                            <a href=""><i class="fa fa-instagram"></i></a>
                             <a href=""><i class="fa fa-linkedin"></i></a>
                         </div>
                     </div>
@@ -60,7 +60,7 @@
                             <h4>Janadi Radi <span>Architecture</span></h4>
                             <a href=""><i class="fa fa-facebook"></i></a>
                             <a href=""><i class="fa fa-twitter"></i></a>
-                            <a href=""><i class="fa fa-youtube"></i></a>
+                            <a href=""><i class="fa fa-instagram"></i></a>
                             <a href=""><i class="fa fa-linkedin"></i></a>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                             <h4>Suri Arini <span>Architecture</span></h4>
                             <a href=""><i class="fa fa-facebook"></i></a>
                             <a href=""><i class="fa fa-twitter"></i></a>
-                            <a href=""><i class="fa fa-youtube"></i></a>
+                            <a href=""><i class="fa fa-instagram"></i></a>
                             <a href=""><i class="fa fa-linkedin"></i></a>
                         </div>
                     </div>

@@ -32,10 +32,10 @@
 
 <form action="{{url('/contact') }}" method="POST">
     @csrf
-        <input type="text" class="form-control is-" name="nama"  placeholder="Nama" /><br/>
-        <input type="number" class="form-control"  name="telepon" placeholder="Telepon" /><br/>
+        <input type="text" class="form-control is-" name="nama"  placeholder="Name" /><br/>
+        <input type="number" class="form-control"  name="telepon" placeholder="Phone" /><br/>
         <input type="text" class="form-control" name="email" placeholder="E-mail" /><br/>
-        <textarea class="form-control" name="saran" placeholder="Saran" style="height:150px;"></textarea><br/>
+        <textarea class="form-control" name="saran" placeholder="Suggestions" style="height:150px;"></textarea><br/>
         <button class="btn btn-warning" type="submit">Submit</button>
         <br/><br/>
       </form>
