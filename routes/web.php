@@ -21,6 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('services', 'ServiceController');
 
 Route::resource('architect','ArchitectController');
+Route::resource('detailarchitect','DetailArchitectController');
 
 Route::resource('contractor','ContractorController');
 

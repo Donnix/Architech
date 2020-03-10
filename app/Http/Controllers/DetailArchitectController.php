@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class DetailController extends Controller
+class DetailArchitectController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -23,7 +23,7 @@ class DetailController extends Controller
      */
     public function index()
     {
-        return view('detail');
+        return view('detailarchitect');
     }
 }
 

@@ -60,6 +60,7 @@ transform: scale(1.0);
 }
 }
 /*END LOADER*/
+
 /*HEADER*/
 .header{
 background-color: #333333;
@@ -69,6 +70,7 @@ color:white;
 word-spacing:1px;
 }
 /*END HEADER*/
+
 /*NAVIGASI*/
 .navbar{
 position:-webkit-sticky;
@@ -100,6 +102,7 @@ text-decoration: none;
 background-color: #2196F3;
 }
 /*END NAVIGASI*/
+
 /*CAROUSEL*/
 .carousel-inner img {
 width: 100%; /* Set width to 100% */
@@ -121,6 +124,7 @@ font-size: 24px;
 min-height: 250px; /* Prevent carousel from being distorted if for some reason image doesn't load */
 }
 /*END CAROUSEL*/
+
 /*DESCRIPT*/
 .how-section1{
 margin-top:-15%;
@@ -147,12 +151,14 @@ text-align: center;
 width: 40%;
 }
 /*END DESCRIPT*/
+
 /*CONTACT*/
 .contactus-btn{
 padding: 75px;
 transition: 0.5s ease;
 }
 /*END CONTACT*/
+
 /*COUNTER*/
 .cntr{
 padding: 50px;
@@ -198,6 +204,7 @@ font-size: 40px !important;
 margin-bottom: 15px !important;
 }
 /*END COUNTER*/
+
 /*TITLE*/
 .big-title6 {
 text-align: center;
@@ -270,6 +277,7 @@ left: 50%;
 margin-left: -25px;
 }
 /*END TITLE*/
+
 /*SERVICE*/
 .services {
 background-color: #FBFBFB;
@@ -343,6 +351,7 @@ font-size: 15px;
 line-height: 1.8;
 }
 /*END SERVICE*/
+
 /*PROJECT*/
 .section{
 background: url("../img/19.jpg") no-repeat fixed;
@@ -385,6 +394,7 @@ float:left;
 margin-bottom:10px;
 }
 /*END PROJECT*/
+
 /*TEAM*/
 .pt-100{
 padding-top:100px;
@@ -435,6 +445,7 @@ bottom: 0;
 overflow: hidden;
 }
 /*END TEAM*/
+
 /*SLIDER*/
 .slick-slide {
 margin: 0px 15px;
@@ -544,6 +555,8 @@ border: 1px solid transparent;
 display: none;
 }
 /*END SLIDER*/
+
+/*PEOPLE*/
 .card-content {
 background: #ffffff;
 border: 4px;
@@ -663,6 +676,8 @@ opacity: 0.3;
 .image-container:hover .middle {
 opacity: 1;
 }
+/*END PEOPLE*/
+
 /*FOOTER*/
 footer{
 background-color: #333333;
