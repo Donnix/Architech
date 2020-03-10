@@ -128,7 +128,8 @@ min-height: 250px; /* Prevent carousel from being distorted if for some reason i
 /*DESCRIPT*/
 .how-section1{
 margin-top:-15%;
-padding: 10%;
+padding: 10% 10% 0 10%;
+
 }
 .how-section1 h4{
 color: #ffc107;
@@ -206,42 +207,19 @@ margin-bottom: 15px !important;
 /*END COUNTER*/
 
 /*TITLE*/
-.big-title6 {
-text-align: center;
-font-size: 40px;
-margin-bottom: 60px;
-color: #000;
-font-weight: 600;
-text-transform: capitalize;
-letter-spacing: 2px;
-position: relative;
+.pt-100{
+padding:50px;
 }
-p.title-para6 {
-color: #999;
-line-height: 1.8em;
-margin-top: 2em;
-font-size: 15px;
+.pt-50{
+padding-top: 30px;
 }
-h3.big-title6:before, h2.big-title6:before {
-content: '';
-background: #ccc;
-height: 2px;
-width: 13%;
-position: absolute;
-bottom: -25%;
-left: 43%;
-}
-h3.big-title6:after, h2.big-title6:after {
-content: '';
-background: #03A9F4;
-height: 5px;
-width: 4%;
-position: absolute;
-bottom: -12px;
-left: 645px;
+.pb-50{
+padding-bottom:20px;
 }
 .section-title {
+margin-bottom: 30px;
 position: relative
+
 }
 .section-title p {
 font-size: 16px;
@@ -396,15 +374,6 @@ margin-bottom:10px;
 /*END PROJECT*/
 
 /*TEAM*/
-.pt-100{
-padding-top:100px;
-}
-.pb-100{
-padding-bottom:100px;
-}
-.section-title {
-margin-bottom: 60px;
-}
 .single-team img {
 width: 100%;
 }
@@ -692,4 +661,8 @@ a:active{
 color: #ffc107;
 }
 /*END FOOTER*/
+
+.hg{
+height: 300px;
+}
 

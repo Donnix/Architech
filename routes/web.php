@@ -1,5 +1,3 @@
-
-
 <?php
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +14,9 @@ return view('home');
 });
 
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('selectregister', 'SelectController');
+
+Route::get('home', 'HomeController@index')->name('home');
 
 Route::resource('services', 'ServiceController');
 
@@ -32,9 +32,9 @@ Route::get('loadTableApproval', 'UserController@loadTableApproval')->name('loadT
 Route::get('loadTableReject', 'UserController@loadTableReject')->name('loadTableReject');
 });
 
-Route::get('/contact', 'ContactController@index')->name('contact');
-Route::post('/contact','ContactController@store')->name('contact');
+Route::get('contact', 'ContactController@index')->name('contact');
+Route::post('contact','ContactController@store')->name('contact');
 
-Route::get('/about', 'AboutController@index')->name('about');
+Route::get('about', 'AboutController@index')->name('about');
 
 

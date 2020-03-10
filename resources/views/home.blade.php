@@ -93,13 +93,13 @@
             <img src="img/4g.png" class="rounded-circle img-fluid" alt=""/>
         </div>
     </div>
-</div>
+</div><br><br>
 
 <section class="services pt-4 wow fadeIn" data-wow-duration="3s ease-in-out" id="services">
     <div class="container">
         <div class="row">
-            <div class="col-xl-6 mx-auto text-center">
-                <div class="section-title mb-100">
+            <div class="col-xl-6 mx-auto text-center pb-50">
+                <div class="section-title">
                     <p>what i can do</p>
                     <h4>our services</h4>
                 </div>
@@ -108,7 +108,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms">
                 <!-- Single Service -->
-                <div class="single-service">
+                <div class="hg single-service">
                     <i class="fa fa-user"></i>
                     <h4>Architech</h4>
                     <p>The architect is an expert in the field of architecture, a design engineer or an expert in the built environment.</p>
@@ -116,7 +116,7 @@
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="600ms">
                 <!-- Single Service -->
-                <div class="single-service">
+                <div class="hg single-service">
                     <i class="fa fa-magic"></i>
                     <h4>Home Design</h4>
                     <p>Various types of home architecture that are very popular today.</p>
@@ -124,7 +124,7 @@
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="900ms">
                 <!-- Single Service -->
-                <div class="single-service">
+                <div class="hg single-service">
                     <i class="fa fa-archive"></i>
                     <h4>Furniture Design</h4>
                     <p>Very cleverly designed, being the key to success creating a comfortable and stylish home atmosphere.</p>
@@ -132,7 +132,7 @@
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="1200ms">
                 <!-- Single Service -->
-                <div class="single-service">
+                <div class="hg single-service">
                     <i class="fa fa-gears"></i>
                     <h4>Materials</h4>
                     <p>Material is a substance or object from which something can be made from it, or items needed to make something.</p>
@@ -140,7 +140,7 @@
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="1500ms">
                 <!-- Single Service -->
-                <div class="single-service">
+                <div class="hg single-service">
                     <i class="fa fa-pencil"></i>
                     <h4>Repairs</h4>
                     <p>Repair and beautify residential interiors</p>
@@ -148,7 +148,7 @@
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="1800ms">
                 <!-- Single Service -->
-                <div class="single-service">
+                <div class="hg single-service">
                     <i class="fa fa-fa fa-lightbulb-o"></i>
                     <h4>Planning</h4>
                     <p>Process of thinking about the activities required to achieve a desired goal.</p>
@@ -177,11 +177,11 @@
     </div>
 </section>
 
-<div class="section pt-4">
-    <div class="container pt-50 pb-50" style="padding-bottom: 90px;">
+<div class="section pt-100">
+    <div class="container">
         <div class="row">
-            <div class="col-xl-6 mx-auto text-center wow fadeIn" data-wow-duration="3s ease-in-out">
-                <div class="section-title mb-100" style="color: white;">
+            <div class="pb-50 col-xl-6 mx-auto text-center wow fadeIn" data-wow-duration="3s ease-in-out">
+                <div class="section-title" style="color: white;">
                     <p>what i can do</p>
                     <h4>our project</h4>
                 </div>
@@ -248,7 +248,7 @@
         <div class="section-title">
             <div class="row wow fadeIn" data-wow-duration="3s ease-in-out">
                 <div class="col-xl-6 mx-auto text-center">
-                    <div class="section-title mb-100">
+                    <div class="section-title">
                         <p>what i can do</p>
                         <h4>Our Workers</h4>
                     </div>
@@ -328,9 +328,9 @@
             </div>
         </div>
     </div>
-</section>
+</section><br><br> 
 
-<div class="container pt-100 pb-50">
+<div class="container pb-50">
     <div class="section-title wow fadeIn" data-wow-duration="3s ease-in-out">
         <div class="row">
             <div class="col-xl-6 mx-auto text-center">

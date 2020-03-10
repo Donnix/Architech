@@ -83,9 +83,9 @@
                     <div class="navbar-nav ml-auto">
                         @guest
                         <a class="nav-item nav-link" href="{{ route('login') }}"><i class="fa fa-user"></i> {{ __('Login') }}</a>
-                        @if (Route::has('register'))
-                        <a class="nav-item nav-link" href="{{ route('register') }}"><i class="fa fa-user-o"></i> {{ __('Register') }}</a>
-                        @endif
+                      
+                        <a class="nav-item nav-link" href="selectregister"><i class="fa fa-user-o"></i> Register</a>
+                        
                         @else
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre> {{ Auth::user()->name }} <span class="caret"></span></a>

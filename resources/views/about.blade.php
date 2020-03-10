@@ -11,9 +11,8 @@
     <h2>ABOUT US</h2>
     <ol class="breadcrumb"></ol>
 </section>
-<br>
 
-<section id="projects" class="projects-section bg-light">
+<section id="projects" class="projects-section bg-light pt-100">
     <div class="container">
         <!-- Featured Project Row -->
         <div class="row align-items-center no-gutters mb-4 mb-lg-5 wow fadeInUp" data-wow-duration="2s ease-in-out">
@@ -30,7 +29,7 @@
     </div>
 </section>
 
-<section class="team-area pt-100 pb-50" id="team">
+<section class="team-area " id="team">
     <div class="container">
         <div class="section-title">
             <div class="row wow fadeIn" data-wow-duration="3s ease-in-out">
@@ -108,7 +107,7 @@
         <div class="slide"><img src="img/t10.png"></div>
     </section>
 </div>
-<br><br><br><br><br>
+<br><br>
 
 <section class="cntr bg-warning bg-overlay-1 ptb-80 wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
     <div class="container">
