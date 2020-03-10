@@ -14,14 +14,14 @@ return view('home');
 });
 
 Auth::routes();
-Route::resource('selectregister', 'SelectController');
+Route::get('select-register', 'SelectController@index')->name('selectregister');
 
 Route::get('home', 'HomeController@index')->name('home');
 
 Route::resource('services', 'ServiceController');
 
 Route::resource('architect','ArchitectController');
-Route::resource('detailarchitect','DetailArchitectController');
+Route::get('detail-architect','DetailArchitectController@index')->name('detailarchitect');
 
 Route::resource('contractor','ContractorController');
 

@@ -28,7 +28,7 @@
                     <h4>Home Owner</h4>
                     <p>I am interested in design, looking for home improvement services / suppliers.</p>
                     <div class="card-footer">
-                    <button class="btn btn-warning" onclick="window.location.href='#'">Build Your Dreams</button>
+                    <button class="btn btn-warning" onclick="window.location.href='register'">Build Your Dreams</button>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                     <h4>Profesional</h4>
                     <p>I offer design, building or renovation services for architecture interiors home.</p>
                     <div class="card-footer">
-                    <button class="btn btn-warning" onclick="window.location.href='#'">Get Oppurtunity</button>
+                    <button class="btn btn-warning" onclick="window.location.href='register'">Get Oppurtunity</button>
                     </div>
                 </div>
             </div>

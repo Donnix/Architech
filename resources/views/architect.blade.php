@@ -29,7 +29,7 @@
             <div class="col-md-3">
                 <div class="card-content wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms">
                     <div class="card-img">
-                        <img src="img/p.jpg" alt="">
+                        <img src="img/p.jpg" alt="" class="hg2">
                         <span>
                             <h4>Architect</h4>
                         </span>
@@ -46,7 +46,7 @@
             <div class="col-md-3">
                 <div class="card-content wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="500ms">
                     <div class="card-img">
-                        <img src="img/i.jpg" alt="">
+                        <img src="img/i.jpg" alt="" class="hg2">
                         <span>
                             <h4>Architect</h4>
                         </span>
@@ -63,7 +63,7 @@
             <div class="col-md-3">
                 <div class="card-content wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="700ms">
                     <div class="card-img">
-                        <img src="img/k.jpg" alt="">
+                        <img src="img/k.jpg" alt="" class="hg2">
                         <span>
                             <h4>Architect</h4>
                         </span>
@@ -80,7 +80,7 @@
             <div class="col-md-3">
                 <div class="card-content wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="900ms">
                     <div class="card-img">
-                        <img src="img/kp.jpg" alt="">
+                        <img src="img/kp.jpg" alt="" class="hg2">
                         <span>
                             <h4>Architect</h4>
                         </span>
@@ -97,7 +97,7 @@
             <div class="col-md-3">
                 <div class="card-content wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="1100ms">
                     <div class="card-img">
-                        <img src="img/j.jpg" alt="">
+                        <img src="img/j.jpg" alt="" class="hg2">
                         <span>
                             <h4>Architect</h4>
                         </span>
@@ -114,7 +114,7 @@
             <div class="col-md-3">
                 <div class="card-content wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="1300ms">
                     <div class="card-img">
-                        <img src="img/k.jpg" alt="">
+                        <img src="img/k.jpg" alt="" class="hg2">
                         <span>
                             <h4>Architect</h4>
                         </span>

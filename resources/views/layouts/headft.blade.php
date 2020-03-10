@@ -82,9 +82,9 @@
                     </div>
                     <div class="navbar-nav ml-auto">
                         @guest
-                        <a class="nav-item nav-link" href="{{ route('login') }}"><i class="fa fa-user"></i> {{ __('Login') }}</a>
+                        <a class="nav-item nav-link " href="{{ route('login') }}"><i class="fa fa-user"></i> {{ __('Login') }}</a>
                       
-                        <a class="nav-item nav-link" href="selectregister"><i class="fa fa-user-o"></i> Register</a>
+                        <a class="nav-item nav-link {{ (Request::segment(1) == 'login' || Request::segment(1) == 'select-register') ? 'active' : '' }}" href="select-register"><i class="fa fa-user-o"></i> Register</a>
                         
                         @else
                         <li class="nav-item dropdown">

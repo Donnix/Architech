@@ -8,11 +8,9 @@
         <link rel="icon" type="img/png" href="img/5g.png">
         <title>ARCHITECTURE</title>
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
         <!------ Include the above in your HEAD tag ---------->
         <link rel="stylesheet" type="text/css" href="{{asset('css/styllr.css')}}">
-        <script src="{{asset('js/stylejs.js')}}"></script>
     </head>
     <body>
         <!-- 
@@ -25,7 +23,7 @@
         <div class="sidenav">
             <div class="login-main-text">
                 <a href="home"><img src="img/logo.png"></a> 
-                <p><a href="login">Login</a> or <a href="register">Register</a> from here to access.</p>
+                <p><a href="login">Login</a> or <a href="selectregister">Register</a> from here to access.</p>
             </div>
         </div>
         

@@ -108,7 +108,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms">
                 <!-- Single Service -->
-                <div class="hg single-service">
+                <div class="hg1 single-service">
                     <i class="fa fa-user"></i>
                     <h4>Architech</h4>
                     <p>The architect is an expert in the field of architecture, a design engineer or an expert in the built environment.</p>
@@ -116,7 +116,7 @@
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="600ms">
                 <!-- Single Service -->
-                <div class="hg single-service">
+                <div class="hg1 single-service">
                     <i class="fa fa-magic"></i>
                     <h4>Home Design</h4>
                     <p>Various types of home architecture that are very popular today.</p>
@@ -124,7 +124,7 @@
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="900ms">
                 <!-- Single Service -->
-                <div class="hg single-service">
+                <div class="hg1 single-service">
                     <i class="fa fa-archive"></i>
                     <h4>Furniture Design</h4>
                     <p>Very cleverly designed, being the key to success creating a comfortable and stylish home atmosphere.</p>
@@ -132,7 +132,7 @@
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="1200ms">
                 <!-- Single Service -->
-                <div class="hg single-service">
+                <div class="hg1 single-service">
                     <i class="fa fa-gears"></i>
                     <h4>Materials</h4>
                     <p>Material is a substance or object from which something can be made from it, or items needed to make something.</p>
@@ -140,7 +140,7 @@
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="1500ms">
                 <!-- Single Service -->
-                <div class="hg single-service">
+                <div class="hg1 single-service">
                     <i class="fa fa-pencil"></i>
                     <h4>Repairs</h4>
                     <p>Repair and beautify residential interiors</p>
@@ -148,7 +148,7 @@
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="1800ms">
                 <!-- Single Service -->
-                <div class="hg single-service">
+                <div class="hg1 single-service">
                     <i class="fa fa-fa fa-lightbulb-o"></i>
                     <h4>Planning</h4>
                     <p>Process of thinking about the activities required to achieve a desired goal.</p>
@@ -259,7 +259,7 @@
             <div class="col-md-4">
                 <div class="card-content wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms">
                     <div class="card-img">
-                        <img src="img/p.jpg" alt="">
+                        <img src="img/p.jpg" alt="" class="hg3">
                         <span>
                             <h4>Architect</h4>
                         </span>
@@ -269,14 +269,14 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
                             voluptas totam
                         </p>
-                        <a href="detail" class="btn-card">Read</a>   
+                        <a href="detail-architect" class="btn-card">Read</a>   
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card-content wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="900ms">
                     <div class="card-img">
-                        <img src="img/k.jpg" alt="">
+                        <img src="img/k.jpg" alt="" class="hg3">
                         <span>
                             <h4>Architect</h4>
                         </span>
@@ -286,14 +286,14 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
                             voluptas totam
                         </p>
-                        <a href="detail" class="btn-card">Read</a>   
+                        <a href="detail-architect" class="btn-card">Read</a>   
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card-content wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="1200ms">
                     <div class="card-img">
-                        <img src="img/kp.jpg" alt="">
+                        <img src="img/kp.jpg" alt="" class="hg3">
                         <span>
                             <h4>Architect</h4>
                         </span>
@@ -303,7 +303,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
                             voluptas totam
                         </p>
-                        <a href="detail" class="btn-card">Read</a>   
+                        <a href="detail-architect" class="btn-card">Read</a>   
                     </div>
                 </div>
             </div>
