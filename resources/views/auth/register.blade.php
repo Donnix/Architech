@@ -2,6 +2,21 @@
 
 @extends('layouts.pglogr')
 @section('content')
+<style>
+/*hide row number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}</style>
+
+
 <div class="col-md-6 col-sm-12 wow fadeInLeft" data-wow-duration="2s ease-out">
     <div class="register-form">
         <form method="POST" action="{{ route('register') }}">
@@ -15,7 +30,28 @@
                 </span>
                 @enderror
             </div>
+
             <div class="form-group">
+                <label>{{ __('Phone Number') }}</label>
+                <input id="no_hp" type="number" class="form-control @error('no_hp') is-invalid @enderror" name="no_hp" value="{{ old('no_hp') }}" required autocomplete="no_hp" autofocus>
+                @error('no_hp')
+                <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+                </span>
+                @enderror
+            </div>
+           
+            
+                <div class="form-group " id="myDIV">
+                <label>Role</label>
+                    <select name = "id_level" class="form-control" id="id_level">
+                    <option disabled selected ></option>
+                    @foreach($Level_array as $level)
+                <option value="{{$level->id_level}}">{{$level->nama_level}}</option>
+                @endforeach
+                     </select>
+                </div>
+             <!-- <div class="form-group">
                 <label>{{ __('Address') }}</label>
                 <input id="alamat" type="text" class="form-control @error('alamat') is-invalid @enderror" name="alamat" value="{{ old('alamat') }}" required autocomplete="alamat" autofocus>
 
@@ -24,27 +60,7 @@
                             <strong>{{ $message }}</strong>
                         </span>
                     @enderror
-                </div>
-            
-                <div class="form-group ">
-                <label>Gender</label>
-                    <select name = "gender" class="form-control" id="gender">
-                    <option disabled selected ></option>
-                    <option value="L">Male</option>
-                    <option value="P">Female</option>
-                     </select>
-                </div>
-            
-            <div class="form-group">
-                <label>{{ __('Phone Number') }}</label>
-                <input id="no_hp" type="text" class="form-control @error('no_hp') is-invalid @enderror" name="no_hp" value="{{ old('no_hp') }}" required autocomplete="no_hp" autofocus>
-                @error('no_hp')
-                <span class="invalid-feedback" role="alert">
-                <strong>{{ $message }}</strong>
-                </span>
-                @enderror
-            </div>
-           
+                </div> -->
             
             <!-- <div class="form-group" id="jumlah_perkerja">
                 <label>{{ __('Total Contractor') }}</label>
@@ -79,6 +95,7 @@
                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
             </div>
             <button type="submit" class="btn btn-warning">{{ __('Register') }}</button>
+  
         </form>
     </div>
 </div>
