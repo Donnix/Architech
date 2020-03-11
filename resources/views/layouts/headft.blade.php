@@ -43,6 +43,7 @@
 	    <script src="{{asset('login/vendor/noui/nouislider.min.js')}}"></script>
         <link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">
         <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
         <script src="{{asset('js/stylejs.js')}}"></script>
     </head>
     <body>
