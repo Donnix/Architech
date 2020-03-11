@@ -34,7 +34,7 @@ class ArchitectController extends Controller
 
             /* URL */
             $url_success = route('architect.index');
-            $url_error   = route('architect.create');
+            $url_error   = route('architect.add');
 
             try {
 
