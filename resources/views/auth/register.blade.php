@@ -41,16 +41,8 @@ input[type=number] {
                 @enderror
             </div>
            
-            
-                <div class="form-group " id="myDIV">
-                <label>Role</label>
-                    <select name = "id_level" class="form-control" id="id_level">
-                    <option disabled selected ></option>
-                    @foreach($Level_array as $level)
-                <option value="{{$level->id_level}}">{{$level->nama_level}}</option>
-                @endforeach
-                     </select>
-                </div>
+            <input type="hidden" id="id_level" name="id_level" value="4">
+                
              <!-- <div class="form-group">
                 <label>{{ __('Address') }}</label>
                 <input id="alamat" type="text" class="form-control @error('alamat') is-invalid @enderror" name="alamat" value="{{ old('alamat') }}" required autocomplete="alamat" autofocus>

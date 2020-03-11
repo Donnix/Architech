@@ -17,6 +17,7 @@ Auth::routes();
 Route::get('select-register', 'SelectController@index')->name('selectregister');
 
 Route::get('home', 'HomeController@index')->name('home');
+Route::resource('register-professional', 'Auth\RegisterController');
 
 Route::resource('services', 'ServiceController');
 

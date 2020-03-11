@@ -39,7 +39,7 @@
                     <h4>Profesional</h4>
                     <p>I offer design, building or renovation services for architecture interiors home.</p>
                     <div class="card-footer">
-                    <button class="btn btn-warning" onclick="window.location.href='register'">Get Oppurtunity</button>
+                    <button class="btn btn-warning" onclick="window.location.href='register-professional'">Get Oppurtunity</button>
                     </div>
                 </div>
             </div>
