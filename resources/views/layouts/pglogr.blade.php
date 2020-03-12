@@ -23,7 +23,7 @@
         <div class="sidenav">
             <div class="login-main-text">
                 <a href="home"><img src="img/logo.png"></a> 
-                <p><a href="login">Login</a> or <a href="selectregister">Register</a> from here to access.</p>
+                <p><a href="login">Login</a> or <a href="select-register">Register</a> from here to access.</p>
             </div>
         </div>
         

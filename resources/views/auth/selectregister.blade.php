@@ -23,7 +23,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms">
                 <!-- Single Service -->
-                <div class="hg single-service">
+                <div class="hg single-service" >
                     <i class="fa fa-users"></i>
                     <h4>Home Owner</h4>
                     <p>I am interested in design, looking for home improvement services / suppliers.</p>
@@ -39,7 +39,7 @@
                     <h4>Profesional</h4>
                     <p>I offer design, building or renovation services for architecture interiors home.</p>
                     <div class="card-footer">
-                    <button class="btn btn-warning" onclick="window.location.href='register'">Get Oppurtunity</button>
+                    <button class="btn btn-warning" onclick="window.location.href='register-professional'">Get Oppurtunity</button>
                     </div>
                 </div>
             </div>

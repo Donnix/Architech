@@ -33,7 +33,7 @@ input[type=number] {
 
             <div class="form-group">
                 <label>{{ __('Phone Number') }}</label>
-                <input id="no_hp" type="number" class="form-control @error('no_hp') is-invalid @enderror" name="no_hp" value="{{ old('no_hp') }}" required autocomplete="no_hp" autofocus>
+                <input id="no_hp" type="number" class="form-control @error('no_hp') is-invalid @enderror" maxlength="14" name="no_hp" value="{{ old('no_hp') }}" required autocomplete="no_hp" autofocus>
                 @error('no_hp')
                 <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
@@ -41,16 +41,8 @@ input[type=number] {
                 @enderror
             </div>
            
-            
-                <div class="form-group " id="myDIV">
-                <label>Role</label>
-                    <select name = "id_level" class="form-control" id="id_level">
-                    <option disabled selected ></option>
-                    @foreach($Level_array as $level)
-                <option value="{{$level->id_level}}">{{$level->nama_level}}</option>
-                @endforeach
-                     </select>
-                </div>
+            <input type="hidden" id="id_level" name="id_level" value="4">
+                
              <!-- <div class="form-group">
                 <label>{{ __('Address') }}</label>
                 <input id="alamat" type="text" class="form-control @error('alamat') is-invalid @enderror" name="alamat" value="{{ old('alamat') }}" required autocomplete="alamat" autofocus>
