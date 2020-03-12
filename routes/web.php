@@ -13,17 +13,14 @@ Route::get('/', function () {
 return view('home');
 });
 
+Route::group(['prefix' => '/'],function(){
+
 Auth::routes();
-Route::get('select-register', 'SelectController@index')->name('selectregister');
 
-Route::get('home', 'HomeController@index')->name('home');
+Route::group(['prefix' => 'home', 'as' => 'home.'], function() {
+Route::get('/', 'HomeController@index')->name('index');
+});
 
-Route::resource('services', 'ServiceController');
-
-Route::resource('architect','ArchitectController');
-Route::get('detail-architect','DetailArchitectController@index')->name('detailarchitect');
-
-Route::resource('contractor','ContractorController');
 
 Route::group(['prefix' => 'datauser', 'as' => 'datauser.'], function() {
 Route::get('/', 'UserController@index')->name('index');
@@ -32,9 +29,44 @@ Route::get('loadTableApproval', 'UserController@loadTableApproval')->name('loadT
 Route::get('loadTableReject', 'UserController@loadTableReject')->name('loadTableReject');
 });
 
-Route::get('contact', 'ContactController@index')->name('contact');
-Route::post('contact','ContactController@store')->name('contact');
 
-Route::get('about', 'AboutController@index')->name('about');
+Route::group(['prefix' => 'select-register', 'as' => 'selectregister.'], function() {
+Route::get('/', 'SelectController@index')->name('index');
+});
+
+
+Route::group(['prefix' => 'architect', 'as' => 'architect.'], function() {
+Route::get('/', 'ArchitectController@index')->name('index');
+// Route::get('detailarchitect', 'ArchitectController@detailarchitect')->name('detailarchitect');
+});
+// Untuk sementara
+Route::group(['prefix' => 'detail-architect', 'as' => 'detailarchitect.'], function() {
+Route::get('/', 'DetailArchitectController@index')->name('index');
+});
+
+
+Route::group(['prefix' => 'contractor', 'as' => 'contractor.'], function() {
+Route::get('/', 'ContractorController@index')->name('index');
+});
+
+
+Route::group(['prefix' => 'about', 'as' => 'about.'], function() {
+Route::get('/', 'AboutController@index')->name('index');
+});
+
+
+Route::group(['prefix' => 'contact', 'as' => 'contact.'], function() {
+Route::get('/', 'ContactController@index')->name('index');
+Route::get('store', 'ContactController@store')->name('store');
+
+});
+
+
+});
+
+// Route::resource('services', 'ServiceController');
+
+// Route::resource('architect','ArchitectController');
+// Route::get('detail-architect','DetailArchitectController@index')->name('detailarchitect');
 
 

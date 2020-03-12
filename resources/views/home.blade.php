@@ -159,7 +159,7 @@
 </section>
 <br>
 
-<section class="contactus-btn bg-warning bg-overlay-1 ptb-80">
+<section class="contactus-btn bg-warning bg-overlay-1 ptb-80 shadow-lg">
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-sm-12">
@@ -220,7 +220,7 @@
     </div>
 </div>
 
-<section class="cntr bg-warning bg-overlay-1 ptb-80 wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+<section class="cntr bg-warning bg-overlay-1 ptb-80 wow fadeIn animated shadow-lg" style="visibility: visible; animation-name: fadeIn;">
     <div class="container">
         <div class="row">
             <!-- counter -->
@@ -312,7 +312,7 @@
 </section>
 <br><br>
 
-<section class="contactus-btn bg-warning bg-overlay-1 ptb-80" style="padding: 50px;">
+<section class="contactus-btn bg-warning bg-overlay-1 ptb-80 shadow-lg" style="padding: 50px;">
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-sm-12">

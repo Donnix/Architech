@@ -18,7 +18,7 @@
 <br><br>
 
 <div class="container">
-    <div class="row">
+    <div class="row wow fadeIn" data-wow-duration="3s ease-in-out">
         <div class="col-md-8">
             @if ($errors->any())
             <div class="alert alert-danger">
