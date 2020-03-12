@@ -37,8 +37,14 @@ Route::get('/', 'SelectController@index')->name('index');
 
 Route::group(['prefix' => 'architect', 'as' => 'architect.'], function() {
 Route::get('/', 'ArchitectController@index')->name('index');
-// Route::get('detailarchitect', 'ArchitectController@detailarchitect')->name('detailarchitect');
-});
+				
+					Route::get('create', 'ArchitectController@create')->name('add');
+					Route::post('save', 'ArchitectController@store')->name('save');
+					Route::get('edit/{id}', 'ArchitectController@edit')->name('edit');
+					Route::post('update/{id}', 'ArchitectController@update')->name('update');
+					Route::get('delete', 'ArchitectController@destroy')->name('delete');
+
+                    });
 // Untuk sementara
 Route::group(['prefix' => 'detail-architect', 'as' => 'detailarchitect.'], function() {
 Route::get('/', 'DetailArchitectController@index')->name('index');
