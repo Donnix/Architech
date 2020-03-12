@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,19 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" type="img/png" href="img/5g.png">
         <title>ARCHITECH</title>
-    
-        <link rel="icon" type="image/png" href="{{asset('login/images/icons/favicon.ico')}}"/>
-        <link rel="stylesheet" type="text/css" href="{{asset('login/vendor/bootstrap/css/bootstrap.min.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('login/fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('login/fonts/iconic/css/material-design-iconic-font.min.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('login/vendor/animate/animate.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('login/vendor/css-hamburgers/hamburgers.min.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('login/vendor/animsition/css/animsition.min.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('login/vendor/select2/select2.min.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('login/vendor/daterangepicker/daterangepicker.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('login/vendor/noui/nouislider.min.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('login/css/util.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('login/css/main.css')}}">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
@@ -32,18 +17,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="{{asset('login/vendor/jquery/jquery-3.2.1.min.js')}}"></script>
-        <script src="{{asset('login/vendor/animsition/js/animsition.min.js')}}"></script>
-        <script src="{{asset('login/vendor/bootstrap/js/popper.js')}}"></script>
-        <script src="{{asset('login/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
-        <script src="{{asset('login/vendor/select2/select2.min.js')}}"></script>
-        <script src="{{asset('login/vendor/daterangepicker/moment.min.js')}}"></script>
-        <script src="{{asset('login/vendor/daterangepicker/daterangepicker.js')}}"></script>
-        <script src="{{asset('login/vendor/countdowntime/countdowntime.js')}}"></script>
-	    <script src="{{asset('login/vendor/noui/nouislider.min.js')}}"></script>
         <link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">
         <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
         <script src="{{asset('js/stylejs.js')}}"></script>
     </head>
     <body>
@@ -76,7 +51,7 @@
         
         <nav class="nvg navbar navbar-expand-md navbar-light bg-warning sticky-top shadow-lg" id="navbar">
             <div class="container">
-                <a href="#home" class="navbar-brand mr-3"><img src="{{asset('img/lgg.png')}}"></a>
+                <a href="#home" class="navbar-brand mr-3"><img src="img/lgg.png"></a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -105,7 +80,7 @@
                     </div>
                     <div class="navbar-nav ml-auto">
                         @guest
-                        <a class="nav-item nav-link " href="{{ route('login') }}"><i class="fa fa-user"></i> {{ __('Login') }}</a>
+                        <a class="nav-item nav-link " href="login"><i class="fa fa-user"></i> {{ __('Login') }}</a>
                       
                         <a class="nav-item nav-link {{ (Request::segment(1) == 'login' || Request::segment(1) == 'select-register') ? 'active' : '' }}" href="select-register"><i class="fa fa-user-o"></i> Register</a>
                         
@@ -137,7 +112,7 @@
                 <div class="row text-center text-md-left mt-3 pb-3">
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <img src="{{asset('img/ccc.png')}}">
+                        <img src="img/ccc.png">
                         <br><br>
                         <p style="text-align: justify;">Not the beauty of the building you need to see, but how the foundation is built will be tesded by time.
                         </p>

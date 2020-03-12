@@ -18,7 +18,7 @@ class ArchitectController extends Controller
      */
     public function index()
     {
-        return view('architect');
+        return view('architect.index');
     }
 
     public function create(){
