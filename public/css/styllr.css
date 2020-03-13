@@ -21,7 +21,8 @@ transition: 0.5s ease-out;
       padding-top: 15px;
     }
 }
-@media screen and (max-width: 450px) {
+
+@media screen and (max-width: 600px) {
     .login-form{
         margin-top: 10%;
         margin-bottom: 1%;
@@ -36,8 +37,9 @@ transition: 0.5s ease-out;
     margin-left:-15px;
     padding: 60px;
     color: #fff;
+    }
 }
-}
+
 @media screen and (min-width: 768px){
     .main{
         margin-left: 40%; 
@@ -54,7 +56,7 @@ transition: 0.5s ease-out;
         margin-bottom: 5%;
     }
     .register-form{
-        margin-top: 10%;
+        margin-top: 35%;
         margin-bottom: 10%;
     }
     .login-main-text{
@@ -62,9 +64,9 @@ transition: 0.5s ease-out;
     margin-left:-15px;
     padding: 60px;
     color: #fff;
+    }
 }
 
-}
 .login-main-text{
     margin-top: 30%;
     margin-left: -25px;

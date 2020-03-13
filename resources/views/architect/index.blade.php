@@ -25,6 +25,7 @@
                 </div>
             </div>
         </div>
+        <div class="container">
         <div class="row">
             <div class="col-md-3">
                 <div class="card-content wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms">
@@ -39,7 +40,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
                             voluptas totam
                         </p>
-                        <a href="detailarchitect" class="btn-card">Read</a>   
+                        <a href="detail-architect" class="btn-card">Read</a>   
                     </div>
                 </div>
             </div>
@@ -56,7 +57,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
                             voluptas totam
                         </p>
-                        <a href="detailarchitect" class="btn-card">Read</a>   
+                        <a href="detail-architect" class="btn-card">Read</a>   
                     </div>
                 </div>
             </div>
@@ -73,7 +74,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
                             voluptas totam
                         </p>
-                        <a href="detailarchitect" class="btn-card">Read</a>   
+                        <a href="detail-architect" class="btn-card">Read</a>   
                     </div>
                 </div>
             </div>
@@ -90,7 +91,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
                             voluptas totam
                         </p>
-                        <a href="detailarchitect" class="btn-card">Read</a>   
+                        <a href="detail-architect" class="btn-card">Read</a>   
                     </div>
                 </div>
             </div>
@@ -107,7 +108,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
                             voluptas totam
                         </p>
-                        <a href="detailarchitect" class="btn-card">Read</a>   
+                        <a href="detail-architect" class="btn-card">Read</a>   
                     </div>
                 </div>
             </div>
@@ -124,11 +125,12 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
                             voluptas totam
                         </p>
-                        <a href="detailarchitect" class="btn-card">Read</a>   
+                        <a href="detail-architect" class="btn-card">Read</a>   
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </section>
 

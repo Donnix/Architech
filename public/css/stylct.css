@@ -1,5 +1,19 @@
 
 
+.input{
+display: block;
+width: 100%;
+height: calc(1.5em + .75rem + 2px);
+padding: .375rem .75rem;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #495057;
+border: 1px solid #ced4da;
+border-radius: .25rem;
+}
+
+
 .page-footer{
 background: url("../img/2.jpg") no-repeat fixed;
 background-position: center;
@@ -17,6 +31,8 @@ bottom: 0;
 display: block;
 z-index: -1;
 }
+
+
 .banner_area {
 background: url("../img/ff.jpg") no-repeat fixed;
 background-position: center;

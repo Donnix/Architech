@@ -41,6 +41,7 @@
 <br><br><br>
 
 <div class="how-section1">
+    <div class="container">   
     <div class="row">
         <div class="col-md-6 how-img wow slideInLeft" data-wow-duration="3s ease-in">
             <img src="img/1g.png" class="rounded-circle img-fluid" alt=""/>
@@ -93,6 +94,7 @@
             <img src="img/4g.png" class="rounded-circle img-fluid" alt=""/>
         </div>
     </div>
+</div>
 </div><br><br>
 
 <section class="services pt-4 wow fadeIn" data-wow-duration="3s ease-in-out" id="services">
@@ -260,7 +262,7 @@
                 <div class="card-content wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms">
                     <div class="card-img">
                         <img src="img/p.jpg" alt="" class="hg3">
-                        <span>
+                        <span class="ml">
                             <h4>Architect</h4>
                         </span>
                     </div>
@@ -277,7 +279,7 @@
                 <div class="card-content wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="900ms">
                     <div class="card-img">
                         <img src="img/k.jpg" alt="" class="hg3">
-                        <span>
+                        <span class="ml">
                             <h4>Architect</h4>
                         </span>
                     </div>
@@ -294,7 +296,7 @@
                 <div class="card-content wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="1200ms">
                     <div class="card-img">
                         <img src="img/kp.jpg" alt="" class="hg3">
-                        <span>
+                        <span class="ml">
                             <h4>Architect</h4>
                         </span>
                     </div>
