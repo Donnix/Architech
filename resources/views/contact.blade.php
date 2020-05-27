@@ -18,7 +18,7 @@
 <br><br>
 
 <div class="container">
-    <div class="row">
+    <div class="row wow fadeIn" data-wow-duration="3s ease-in-out">
         <div class="col-md-8">
             @if ($errors->any())
             <div class="alert alert-danger">
@@ -32,10 +32,10 @@
             @endif
             <form action="{{url('/contact') }}" method="POST">
                 @csrf
-                <input type="text" class="form-control is-" name="nama"  placeholder="Name" /><br/>
-                <input type="number" class="form-control"  name="telepon" placeholder="Phone" /><br/>
-                <input type="text" class="form-control" name="email" placeholder="E-mail" /><br/>
-                <textarea class="form-control" name="saran" placeholder="Suggestions" style="height:150px;"></textarea><br/>
+                <input type="text" class="input is-" name="nama"  placeholder="Name" /><br/>
+                <input type="number" class="input"  name="telepon" placeholder="Phone" /><br/>
+                <input type="text" class="input" name="email" placeholder="E-mail" /><br/>
+                <textarea class="input" name="saran" placeholder="Suggestions" style="height:150px;"></textarea><br/>
                 <button class="btn btn-warning" type="submit">Submit</button>
                 <br/><br/>
             </form>

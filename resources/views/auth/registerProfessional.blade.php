@@ -33,7 +33,7 @@ input[type=number] {
 
             <div class="form-group">
                 <label>{{ __('Phone Number') }}</label>
-                <input id="no_hp" type="number" class="form-control @error('no_hp') is-invalid @enderror" name="no_hp" value="{{ old('no_hp') }}" required autocomplete="no_hp" autofocus>
+                <input id="no_hp" type="number" class="form-control @error('no_hp') is-invalid @enderror" maxlength="14"name="no_hp" value="{{ old('no_hp') }}" required autocomplete="no_hp" autofocus>
                 @error('no_hp')
                 <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>

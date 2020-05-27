@@ -23,7 +23,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms">
                 <!-- Single Service -->
-                <div class="hg single-service">
+                <div class="hg single-service" >
                     <i class="fa fa-users"></i>
                     <h4>Home Owner</h4>
                     <p>I am interested in design, looking for home improvement services / suppliers.</p>
